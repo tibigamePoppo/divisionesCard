@@ -4,5 +4,7 @@ public enum StateType
     PlayerReady,
     Draw,
     CardSelect,
-    Battle
+    EnemyCardSelect,
+    Battle,
+    GameEnd
 }

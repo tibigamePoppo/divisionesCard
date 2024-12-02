@@ -12,7 +12,9 @@ public class BattleState<T> : StateBase<T>
 
     public override void StateAction(T arg1)
     {
-        Debug.Log("BattleState.StateAction");
+        BattleArg drawArg = arg1 as BattleArg;
+        view.UpdatePlayerHand(drawArg.curendHand.ToArray());
+        view.HidePreviewCard();
         base.StateAction(arg1);
     }
 }

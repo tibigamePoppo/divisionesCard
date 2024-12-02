@@ -19,6 +19,6 @@ public class IngamePresenter : MonoBehaviour
         _ingameModel.Init();
         _ingameView.Init();
 
-        _ingameView.SelectedCard.Subscribe(data =>_ingameModel.PlayerSelectCard(data)).AddTo(this);
+        _ingameView.SelectedCard.Where(_ => _ingameModel.CurrentState == StateType.CardSelect).Subscribe(data =>_ingameModel.SedPlayerSelectCard(data)).AddTo(this);
     }
 }

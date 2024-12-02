@@ -11,10 +11,14 @@ public class IngameModel
     public IObservable<Unit> StageReady => _stageReady;
     private ReactiveProperty<StateType> _state = new ReactiveProperty<StateType>();
     public IObservable<StateType> State => _state;
+    public StateType CurrentState { get { return _state.Value; } }
     private List<DivisionData> _deck = new List<DivisionData>();
     private List<DivisionData> _playerHnad = new List<DivisionData>();
     public List<DivisionData> deck { get { return _deck; } }
     public List<DivisionData> playerDeck { get { return _playerHnad; } }
+
+    public DivisionData PlayerSelectCard { get => _playerSelectCard; }
+
     private DivisionData _playerSelectCard;
     private DivisionData _enemySelectCard;
     public void Init()
@@ -28,10 +32,13 @@ public class IngameModel
         State.Where(state => state == StateType.PlayerReady)
             .Subscribe(_ => PlaeyrHandBuild());
 
-        State.Where(state => state == StateType.CardSelect)
+        State.Where(state => state == StateType.Draw)
+            .Subscribe(_ => PlayerDraw());
+
+        State.Where(state => state == StateType.EnemyCardSelect)
             .Subscribe(_ => EnemySelectCard());
 
-        State.Where(state => state == StateType.CardSelect)
+        State.Where(state => state == StateType.Battle)
             .Subscribe(_ => Battle());
     }
 
@@ -52,6 +59,17 @@ public class IngameModel
         _state.Value = StateType.Draw;
     }
 
+    private void PlayerDraw()
+    {
+        if(_playerHnad.Count < PLAYERHANDCOUNT)
+        {
+            var card = _deck[UnityEngine.Random.Range(0, _deck.Count)];
+            _playerHnad.Add(card);
+            _deck.Remove(card);
+        }
+        _state.Value = StateType.CardSelect;
+    }
+
     /// <summary>
     /// ƒvƒŒƒCƒ„[‚ÌèD‚Ìİ’è
     /// </summary>
@@ -62,16 +80,16 @@ public class IngameModel
         _deck.Remove(type);
     }
 
-    public void PlayerSelectCard(DivisionData data)
+    public void SedPlayerSelectCard(DivisionData data)
     {
         _playerSelectCard = data;
-        _state.Value = StateType.CardSelect;
+        _state.Value = StateType.EnemyCardSelect;
     }
 
     public void EnemySelectCard()
     {
-
         _enemySelectCard = _deck[UnityEngine.Random.Range(0, _deck.Count)];
+        _playerHnad.Remove(_playerSelectCard);
         _deck.Remove(_enemySelectCard);
         UnityEngine.Debug.Log($"EnemyCard is {_enemySelectCard.name}");
         _state.Value = StateType.Battle;
@@ -79,6 +97,7 @@ public class IngameModel
 
     public void Battle()
     {
+
         //TODO:‚Æ‚è‚ ‚¦‚¸–ÊÏ‚Ì‚İ‚ÅŸ•‰
         if (_playerSelectCard.surfaceSize > _enemySelectCard.surfaceSize)
         {
@@ -91,6 +110,15 @@ public class IngameModel
         else
         {
             UnityEngine.Debug.Log("Draw");
+        }
+        if (deck.Count < 2)
+        {
+            UnityEngine.Debug.Log("GameEnd");
+            _state.Value = StateType.GameEnd;
+        }
+        else
+        {
+            _state.Value = StateType.Draw;
         }
     }
 }

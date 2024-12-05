@@ -378,6 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: {fileID: 1493282601175798674}
   _image: {fileID: 2728601769528764140}
+  _spritePool: {fileID: 11400000, guid: efd64920393173d4e8f859136a967bcc, type: 2}
 --- !u!114 &2200317981111043677
 MonoBehaviour:
   m_ObjectHideFlags: 0

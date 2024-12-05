@@ -4,6 +4,7 @@ using System;
 public class DivisionData
 {
     public int id;
+    public string enName;
     public string name;
     public int surfaceSize;
     public int population;

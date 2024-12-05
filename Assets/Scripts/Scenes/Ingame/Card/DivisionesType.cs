@@ -42,7 +42,7 @@ public enum DivisionesType
     nagasaki,
     okinawa,
     kagoshima,
-    miyazakki,
+    miyazaki,
     saga,
     kochi,
     ehime,

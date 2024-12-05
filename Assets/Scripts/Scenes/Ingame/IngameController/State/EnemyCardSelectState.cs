@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleState<T> : StateBase<T>
+public class EnemyCardSelectState<T> : StateBase<T>
 {
     public override void Init(IngameView ingameView)
     {
@@ -12,10 +12,8 @@ public class BattleState<T> : StateBase<T>
 
     public override void StateAction(T arg1)
     {
-        BattleArg battleArg = arg1 as BattleArg;
-        view.UpdatePlayerHand(battleArg.curendHand.ToArray());
-        view.EnemyCardSet(battleArg.card);
-        view.HidePreviewCard();
+        EnemySelectArg selectArg = arg1 as EnemySelectArg;
+        view.EnemyCardHide();
         base.StateAction(arg1);
     }
 }

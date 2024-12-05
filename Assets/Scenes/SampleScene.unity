@@ -487,6 +487,7 @@ RectTransform:
   m_Children:
   - {fileID: 1742976050}
   - {fileID: 579487256}
+  - {fileID: 1301783618}
   - {fileID: 1103294392}
   - {fileID: 1648946223}
   - {fileID: 1839936376}
@@ -733,7 +734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -874,6 +875,123 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843999245}
   m_CullTransparentMesh: 1
+--- !u!1001 &1054134992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1301783618}
+    m_Modifications:
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Name
+      value: Card
+      objectReference: {fileID: 0}
+    - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+--- !u!224 &1054134993 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+  m_PrefabInstance: {fileID: 1054134992}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1054134994 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099176510629223985, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+  m_PrefabInstance: {fileID: 1054134992}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6176abd16dea545409cc1b461034c091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1079832179 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
@@ -1011,7 +1129,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee73322669cc06498579766868d904f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _masterData: "{\"DivisionData\":[{\"id\":1,\"enName\":\"hokkaido\",\"name\":\"\u5317\u6D77\u9053\",\"surfaceSize\":7842075,\"population\":5140000,\"temperature\":10.2,\"urban\":179,\"village\":45,\"forestSize\":5313034,\"Hospitals\":638,\"College\":37},{\"id\":2,\"enName\":\"aomori\",\"name\":\"\u9752\u68EE\u770C\",\"surfaceSize\":964595,\"population\":1204000,\"temperature\":11.3,\"urban\":40,\"village\":10,\"forestSize\":613319,\"Hospitals\":110,\"College\":10},{\"id\":3,\"enName\":\"iwate\",\"name\":\"\u5CA9\u624B\u770C\",\"surfaceSize\":1527501,\"population\":1181000,\"temperature\":11.2,\"urban\":33,\"village\":14,\"forestSize\":1140190,\"Hospitals\":108,\"College\":6},{\"id\":4,\"enName\":\"miyagi\",\"name\":\"\u5BAE\u57CE\u770C\",\"surfaceSize\":728229,\"population\":2280000,\"temperature\":13.5,\"urban\":35,\"village\":19,\"forestSize\":403665,\"Hospitals\":150,\"College\":14},{\"id\":5,\"enName\":\"akita\",\"name\":\"\u79CB\u7530\u770C\",\"surfaceSize\":1163752,\"population\":930000,\"temperature\":12.6,\"urban\":25,\"village\":13,\"forestSize\":817659,\"Hospitals\":81,\"College\":7},{\"id\":6,\"enName\":\"yamagata\",\"name\":\"\u5C71\u5F62\u770C\",\"surfaceSize\":932315,\"population\":1041000,\"temperature\":12.6,\"urban\":35,\"village\":13,\"forestSize\":643605,\"Hospitals\":69,\"College\":6},{\"id\":7,\"enName\":\"fukushima\",\"name\":\"\u798F\u5CF6\u770C\",\"surfaceSize\":1378414,\"population\":1790000,\"temperature\":13.9,\"urban\":59,\"village\":13,\"forestSize\":937613,\"Hospitals\":157,\"College\":8},{\"id\":8,\"enName\":\"obaraki\",\"name\":\"\u8328\u57CE\u770C\",\"surfaceSize\":609754,\"population\":2840000,\"temperature\":14.8,\"urban\":44,\"village\":32,\"forestSize\":197837,\"Hospitals\":215,\"College\":11},{\"id\":9,\"enName\":\"tochigi\",\"name\":\"\u6803\u6728\u770C\",\"surfaceSize\":640809,\"population\":1909000,\"temperature\":14.9,\"urban\":25,\"village\":14,\"forestSize\":338814,\"Hospitals\":119,\"College\":9},{\"id\":10,\"enName\":\"gumma\",\"name\":\"\u7FA4\u99AC\u770C\",\"surfaceSize\":636228,\"population\":1913000,\"temperature\":15.7,\"urban\":35,\"village\":12,\"forestSize\":407081,\"Hospitals\":142,\"College\":15},{\"id\":11,\"enName\":\"saitama\",\"name\":\"\u57FC\u7389\u770C\",\"surfaceSize\":379775,\"population\":7337000,\"temperature\":16,\"urban\":63,\"village\":50,\"forestSize\":119259,\"Hospitals\":367,\"College\":27},{\"id\":12,\"enName\":\"chiba\",\"name\":\"\u5343\u8449\u770C\",\"surfaceSize\":515674,\"population\":6266000,\"temperature\":16.7,\"urban\":54,\"village\":43,\"forestSize\":155129,\"Hospitals\":299,\"College\":27},{\"id\":13,\"enName\":\"tokyo\",\"name\":\"\u6771\u4EAC\u90FD\",\"surfaceSize\":219405,\"population\":14038000,\"temperature\":16.4,\"urban\":62,\"village\":49,\"forestSize\":76160,\"Hospitals\":681,\"College\":144},{\"id\":14,\"enName\":\"kanagawa\",\"name\":\"\u795E\u5948\u5DDD\u770C\",\"surfaceSize\":241632,\"population\":9232000,\"temperature\":16.7,\"urban\":33,\"village\":47,\"forestSize\":93442,\"Hospitals\":362,\"College\":31},{\"id\":15,\"enName\":\"niigata\",\"name\":\"\u65B0\u6F5F\u770C\",\"surfaceSize\":1258396,\"population\":2153000,\"temperature\":14.5,\"urban\":30,\"village\":28,\"forestSize\":798655,\"Hospitals\":138,\"College\":22},{\"id\":16,\"enName\":\"toyama\",\"name\":\"\u5BCC\u5C71\u770C\",\"surfaceSize\":424754,\"population\":1017000,\"temperature\":15.1,\"urban\":15,\"village\":10,\"forestSize\":240531,\"Hospitals\":116,\"College\":5},{\"id\":17,\"enName\":\"ishikawa\",\"name\":\"\u77F3\u5DDD\u770C\",\"surfaceSize\":418623,\"population\":1118000,\"temperature\":15.7,\"urban\":19,\"village\":11,\"forestSize\":277598,\"Hospitals\":121,\"College\":14},{\"id\":18,\"enName\":\"fukui\",\"name\":\"\u798F\u4E95\u770C\",\"surfaceSize\":419058,\"population\":753000,\"temperature\":15.4,\"urban\":17,\"village\":9,\"forestSize\":309847,\"Hospitals\":93,\"College\":6},{\"id\":19,\"enName\":\"yamanashi\",\"name\":\"\u5C71\u68A8\u770C\",\"surfaceSize\":446527,\"population\":802000,\"temperature\":15.7,\"urban\":27,\"village\":13,\"forestSize\":347359,\"Hospitals\":60,\"College\":7},{\"id\":20,\"enName\":\"nagano\",\"name\":\"\u9577\u91CE\u770C\",\"surfaceSize\":1356156,\"population\":2020000,\"temperature\":12.7,\"urban\":77,\"village\":19,\"forestSize\":1021559,\"Hospitals\":139,\"College\":11},{\"id\":21,\"enName\":\"gifu\",\"name\":\"\u5C90\u961C\u770C\",\"surfaceSize\":1062129,\"population\":1946000,\"temperature\":16.7,\"urban\":42,\"village\":21,\"forestSize\":838589,\"Hospitals\":115,\"College\":13},{\"id\":22,\"enName\":\"shizuoka\",\"name\":\"\u9759\u5CA1\u770C\",\"surfaceSize\":777702,\"population\":3582000,\"temperature\":17.4,\"urban\":35,\"village\":33,\"forestSize\":488352,\"Hospitals\":183,\"College\":14},{\"id\":23,\"enName\":\"aichi\",\"name\":\"\u611B\u77E5\u770C\",\"surfaceSize\":517324,\"population\":7495000,\"temperature\":16.9,\"urban\":54,\"village\":54,\"forestSize\":217531,\"Hospitals\":371,\"College\":52},{\"id\":24,\"enName\":\"mie\",\"name\":\"\u4E09\u91CD\u770C\",\"surfaceSize\":577448,\"population\":1742000,\"temperature\":16.9,\"urban\":29,\"village\":14,\"forestSize\":370850,\"Hospitals\":116,\"College\":7},{\"id\":25,\"enName\":\"shiga\",\"name\":\"\u6ECB\u8CC0\u770C\",\"surfaceSize\":401738,\"population\":1409000,\"temperature\":15.7,\"urban\":19,\"village\":13,\"forestSize\":203570,\"Hospitals\":60,\"College\":9},{\"id\":26,\"enName\":\"kyoto\",\"name\":\"\u4EAC\u90FD\u5E9C\",\"surfaceSize\":461220,\"population\":2550000,\"temperature\":16.8,\"urban\":26,\"village\":26,\"forestSize\":342114,\"Hospitals\":185,\"College\":34},{\"id\":27,\"enName\":\"osaka\",\"name\":\"\u5927\u962A\u5E9C\",\"surfaceSize\":190534,\"population\":8782000,\"temperature\":17.5,\"urban\":43,\"village\":64,\"forestSize\":56961,\"Hospitals\":577,\"College\":58},{\"id\":28,\"enName\":\"hyogo\",\"name\":\"\u5175\u5EAB\u770C\",\"surfaceSize\":840094,\"population\":5402000,\"temperature\":17.5,\"urban\":41,\"village\":38,\"forestSize\":562314,\"Hospitals\":346,\"College\":35},{\"id\":29,\"enName\":\"nara\",\"name\":\"\u5948\u826F\u770C\",\"surfaceSize\":369094,\"population\":1306000,\"temperature\":16.2,\"urban\":39,\"village\":12,\"forestSize\":283671,\"Hospitals\":73,\"College\":11},{\"id\":30,\"enName\":\"wakayama\",\"name\":\"\u548C\u6B4C\u5C71\u770C\",\"surfaceSize\":472469,\"population\":903000,\"temperature\":17.3,\"urban\":30,\"village\":9,\"forestSize\":360113,\"Hospitals\":92,\"College\":5},{\"id\":31,\"enName\":\"tottori\",\"name\":\"\u9CE5\u53D6\u770C\",\"surfaceSize\":350713,\"population\":544000,\"temperature\":15.7,\"urban\":19,\"village\":4,\"forestSize\":257355,\"Hospitals\":46,\"College\":3},{\"id\":32,\"enName\":\"shimane\",\"name\":\"\u5CF6\u6839\u770C\",\"surfaceSize\":670766,\"population\":658000,\"temperature\":15.8,\"urban\":19,\"village\":8,\"forestSize\":523260,\"Hospitals\":60,\"College\":2},{\"id\":33,\"enName\":\"okayama\",\"name\":\"\u5CA1\u5C71\u770C\",\"surfaceSize\":711477,\"population\":1862000,\"temperature\":16.4,\"urban\":27,\"village\":19,\"forestSize\":484721,\"Hospitals\":196,\"College\":18},{\"id\":34,\"enName\":\"hiroshima\",\"name\":\"\u5E83\u5CF6\u770C\",\"surfaceSize\":847900,\"population\":2760000,\"temperature\":17.1,\"urban\":23,\"village\":22,\"forestSize\":610059,\"Hospitals\":\"\",\"College\":21},{\"id\":35,\"enName\":\"yamaguchi\",\"name\":\"\u5C71\u53E3\u770C\",\"surfaceSize\":611250,\"population\":1313000,\"temperature\":16.3,\"urban\":19,\"village\":13,\"forestSize\":436534,\"Hospitals\":\"\",\"College\":10},{\"id\":36,\"enName\":\"tokushima\",\"name\":\"\u5FB3\u5CF6\u770C\",\"surfaceSize\":414699,\"population\":704000,\"temperature\":17.2,\"urban\":24,\"village\":8,\"forestSize\":312858,\"Hospitals\":\"\",\"College\":4},{\"id\":37,\"enName\":\"kagawa\",\"name\":\"\u9999\u5DDD\u770C\",\"surfaceSize\":187691,\"population\":934000,\"temperature\":17.3,\"urban\":17,\"village\":8,\"forestSize\":87077,\"Hospitals\":\"\",\"College\":4},{\"id\":38,\"enName\":\"ehime\",\"name\":\"\u611B\u5A9B\u770C\",\"surfaceSize\":567598,\"population\":1306000,\"temperature\":17.3,\"urban\":20,\"village\":11,\"forestSize\":399954,\"Hospitals\":\"\",\"College\":5},{\"id\":39,\"enName\":\"kochi\",\"name\":\"\u9AD8\u77E5\u770C\",\"surfaceSize\":710291,\"population\":676000,\"temperature\":17.7,\"urban\":34,\"village\":11,\"forestSize\":591873,\"Hospitals\":\"\",\"College\":5},{\"id\":40,\"enName\":\"fukuoka\",\"name\":\"\u798F\u5CA1\u770C\",\"surfaceSize\":498764,\"population\":5116000,\"temperature\":18,\"urban\":60,\"village\":43,\"forestSize\":221842,\"Hospitals\":\"\",\"College\":35},{\"id\":41,\"enName\":\"shiga\",\"name\":\"\u4F50\u8CC0\u770C\",\"surfaceSize\":244067,\"population\":801000,\"temperature\":17.7,\"urban\":20,\"village\":10,\"forestSize\":110501,\"Hospitals\":\"\",\"College\":2},{\"id\":42,\"enName\":\"nagasaki\",\"name\":\"\u9577\u5D0E\u770C\",\"surfaceSize\":413099,\"population\":1283000,\"temperature\":17.8,\"urban\":21,\"village\":13,\"forestSize\":241657,\"Hospitals\":\"\",\"College\":8},{\"id\":43,\"enName\":\"kumamoto\",\"name\":\"\u718A\u672C\u770C\",\"surfaceSize\":740918,\"population\":1718000,\"temperature\":17.7,\"urban\":45,\"village\":19,\"forestSize\":457635,\"Hospitals\":\"\",\"College\":9},{\"id\":44,\"enName\":\"oita\",\"name\":\"\u5927\u5206\u770C\",\"surfaceSize\":634070,\"population\":1107000,\"temperature\":17.4,\"urban\":18,\"village\":14,\"forestSize\":448629,\"Hospitals\":\"\",\"College\":5},{\"id\":45,\"enName\":\"miyazaki\",\"name\":\"\u5BAE\u5D0E\u770C\",\"surfaceSize\":773424,\"population\":1052000,\"temperature\":18.2,\"urban\":26,\"village\":9,\"forestSize\":584379,\"Hospitals\":\"\",\"College\":7},{\"id\":46,\"enName\":\"kagoshima\",\"name\":\"\u9E7F\u5150\u5CF6\u770C\",\"surfaceSize\":918633,\"population\":1563000,\"temperature\":19.3,\"urban\":43,\"village\":19,\"forestSize\":584839,\"Hospitals\":\"\",\"College\":6},{\"id\":47,\"enName\":\"okinawa\",\"name\":\"\u6C96\u7E04\u770C\",\"surfaceSize\":228215,\"population\":1468000,\"temperature\":23.7,\"urban\":41,\"village\":11,\"forestSize\":106409,\"Hospitals\":\"\",\"College\":8}]}"
+  _masterData: "{\"DivisionData\":[{\"id\":1,\"enName\":\"hokkaido\",\"name\":\"\u5317\u6D77\u9053\",\"surfaceSize\":7842075,\"population\":5140000,\"temperature\":10.2,\"urban\":179,\"village\":45,\"forestSize\":5313034,\"Hospitals\":638,\"College\":37},{\"id\":2,\"enName\":\"aomori\",\"name\":\"\u9752\u68EE\u770C\",\"surfaceSize\":964595,\"population\":1204000,\"temperature\":11.3,\"urban\":40,\"village\":10,\"forestSize\":613319,\"Hospitals\":110,\"College\":10},{\"id\":3,\"enName\":\"iwate\",\"name\":\"\u5CA9\u624B\u770C\",\"surfaceSize\":1527501,\"population\":1181000,\"temperature\":11.2,\"urban\":33,\"village\":14,\"forestSize\":1140190,\"Hospitals\":108,\"College\":6},{\"id\":4,\"enName\":\"miyagi\",\"name\":\"\u5BAE\u57CE\u770C\",\"surfaceSize\":728229,\"population\":2280000,\"temperature\":13.5,\"urban\":35,\"village\":19,\"forestSize\":403665,\"Hospitals\":150,\"College\":14},{\"id\":5,\"enName\":\"akita\",\"name\":\"\u79CB\u7530\u770C\",\"surfaceSize\":1163752,\"population\":930000,\"temperature\":12.6,\"urban\":25,\"village\":13,\"forestSize\":817659,\"Hospitals\":81,\"College\":7},{\"id\":6,\"enName\":\"yamagata\",\"name\":\"\u5C71\u5F62\u770C\",\"surfaceSize\":932315,\"population\":1041000,\"temperature\":12.6,\"urban\":35,\"village\":13,\"forestSize\":643605,\"Hospitals\":69,\"College\":6},{\"id\":7,\"enName\":\"fukushima\",\"name\":\"\u798F\u5CF6\u770C\",\"surfaceSize\":1378414,\"population\":1790000,\"temperature\":13.9,\"urban\":59,\"village\":13,\"forestSize\":937613,\"Hospitals\":157,\"College\":8},{\"id\":8,\"enName\":\"ibaraki\",\"name\":\"\u8328\u57CE\u770C\",\"surfaceSize\":609754,\"population\":2840000,\"temperature\":14.8,\"urban\":44,\"village\":32,\"forestSize\":197837,\"Hospitals\":215,\"College\":11},{\"id\":9,\"enName\":\"tochigi\",\"name\":\"\u6803\u6728\u770C\",\"surfaceSize\":640809,\"population\":1909000,\"temperature\":14.9,\"urban\":25,\"village\":14,\"forestSize\":338814,\"Hospitals\":119,\"College\":9},{\"id\":10,\"enName\":\"gumma\",\"name\":\"\u7FA4\u99AC\u770C\",\"surfaceSize\":636228,\"population\":1913000,\"temperature\":15.7,\"urban\":35,\"village\":12,\"forestSize\":407081,\"Hospitals\":142,\"College\":15},{\"id\":11,\"enName\":\"saitama\",\"name\":\"\u57FC\u7389\u770C\",\"surfaceSize\":379775,\"population\":7337000,\"temperature\":16,\"urban\":63,\"village\":50,\"forestSize\":119259,\"Hospitals\":367,\"College\":27},{\"id\":12,\"enName\":\"chiba\",\"name\":\"\u5343\u8449\u770C\",\"surfaceSize\":515674,\"population\":6266000,\"temperature\":16.7,\"urban\":54,\"village\":43,\"forestSize\":155129,\"Hospitals\":299,\"College\":27},{\"id\":13,\"enName\":\"tokyo\",\"name\":\"\u6771\u4EAC\u90FD\",\"surfaceSize\":219405,\"population\":14038000,\"temperature\":16.4,\"urban\":62,\"village\":49,\"forestSize\":76160,\"Hospitals\":681,\"College\":144},{\"id\":14,\"enName\":\"kanagawa\",\"name\":\"\u795E\u5948\u5DDD\u770C\",\"surfaceSize\":241632,\"population\":9232000,\"temperature\":16.7,\"urban\":33,\"village\":47,\"forestSize\":93442,\"Hospitals\":362,\"College\":31},{\"id\":15,\"enName\":\"niigata\",\"name\":\"\u65B0\u6F5F\u770C\",\"surfaceSize\":1258396,\"population\":2153000,\"temperature\":14.5,\"urban\":30,\"village\":28,\"forestSize\":798655,\"Hospitals\":138,\"College\":22},{\"id\":16,\"enName\":\"toyama\",\"name\":\"\u5BCC\u5C71\u770C\",\"surfaceSize\":424754,\"population\":1017000,\"temperature\":15.1,\"urban\":15,\"village\":10,\"forestSize\":240531,\"Hospitals\":116,\"College\":5},{\"id\":17,\"enName\":\"ishikawa\",\"name\":\"\u77F3\u5DDD\u770C\",\"surfaceSize\":418623,\"population\":1118000,\"temperature\":15.7,\"urban\":19,\"village\":11,\"forestSize\":277598,\"Hospitals\":121,\"College\":14},{\"id\":18,\"enName\":\"fukui\",\"name\":\"\u798F\u4E95\u770C\",\"surfaceSize\":419058,\"population\":753000,\"temperature\":15.4,\"urban\":17,\"village\":9,\"forestSize\":309847,\"Hospitals\":93,\"College\":6},{\"id\":19,\"enName\":\"yamanashi\",\"name\":\"\u5C71\u68A8\u770C\",\"surfaceSize\":446527,\"population\":802000,\"temperature\":15.7,\"urban\":27,\"village\":13,\"forestSize\":347359,\"Hospitals\":60,\"College\":7},{\"id\":20,\"enName\":\"nagano\",\"name\":\"\u9577\u91CE\u770C\",\"surfaceSize\":1356156,\"population\":2020000,\"temperature\":12.7,\"urban\":77,\"village\":19,\"forestSize\":1021559,\"Hospitals\":139,\"College\":11},{\"id\":21,\"enName\":\"gifu\",\"name\":\"\u5C90\u961C\u770C\",\"surfaceSize\":1062129,\"population\":1946000,\"temperature\":16.7,\"urban\":42,\"village\":21,\"forestSize\":838589,\"Hospitals\":115,\"College\":13},{\"id\":22,\"enName\":\"shizuoka\",\"name\":\"\u9759\u5CA1\u770C\",\"surfaceSize\":777702,\"population\":3582000,\"temperature\":17.4,\"urban\":35,\"village\":33,\"forestSize\":488352,\"Hospitals\":183,\"College\":14},{\"id\":23,\"enName\":\"aichi\",\"name\":\"\u611B\u77E5\u770C\",\"surfaceSize\":517324,\"population\":7495000,\"temperature\":16.9,\"urban\":54,\"village\":54,\"forestSize\":217531,\"Hospitals\":371,\"College\":52},{\"id\":24,\"enName\":\"mie\",\"name\":\"\u4E09\u91CD\u770C\",\"surfaceSize\":577448,\"population\":1742000,\"temperature\":16.9,\"urban\":29,\"village\":14,\"forestSize\":370850,\"Hospitals\":116,\"College\":7},{\"id\":25,\"enName\":\"shiga\",\"name\":\"\u6ECB\u8CC0\u770C\",\"surfaceSize\":401738,\"population\":1409000,\"temperature\":15.7,\"urban\":19,\"village\":13,\"forestSize\":203570,\"Hospitals\":60,\"College\":9},{\"id\":26,\"enName\":\"kyoto\",\"name\":\"\u4EAC\u90FD\u5E9C\",\"surfaceSize\":461220,\"population\":2550000,\"temperature\":16.8,\"urban\":26,\"village\":26,\"forestSize\":342114,\"Hospitals\":185,\"College\":34},{\"id\":27,\"enName\":\"osaka\",\"name\":\"\u5927\u962A\u5E9C\",\"surfaceSize\":190534,\"population\":8782000,\"temperature\":17.5,\"urban\":43,\"village\":64,\"forestSize\":56961,\"Hospitals\":577,\"College\":58},{\"id\":28,\"enName\":\"hyogo\",\"name\":\"\u5175\u5EAB\u770C\",\"surfaceSize\":840094,\"population\":5402000,\"temperature\":17.5,\"urban\":41,\"village\":38,\"forestSize\":562314,\"Hospitals\":346,\"College\":35},{\"id\":29,\"enName\":\"nara\",\"name\":\"\u5948\u826F\u770C\",\"surfaceSize\":369094,\"population\":1306000,\"temperature\":16.2,\"urban\":39,\"village\":12,\"forestSize\":283671,\"Hospitals\":73,\"College\":11},{\"id\":30,\"enName\":\"wakayama\",\"name\":\"\u548C\u6B4C\u5C71\u770C\",\"surfaceSize\":472469,\"population\":903000,\"temperature\":17.3,\"urban\":30,\"village\":9,\"forestSize\":360113,\"Hospitals\":92,\"College\":5},{\"id\":31,\"enName\":\"tottori\",\"name\":\"\u9CE5\u53D6\u770C\",\"surfaceSize\":350713,\"population\":544000,\"temperature\":15.7,\"urban\":19,\"village\":4,\"forestSize\":257355,\"Hospitals\":46,\"College\":3},{\"id\":32,\"enName\":\"shimane\",\"name\":\"\u5CF6\u6839\u770C\",\"surfaceSize\":670766,\"population\":658000,\"temperature\":15.8,\"urban\":19,\"village\":8,\"forestSize\":523260,\"Hospitals\":60,\"College\":2},{\"id\":33,\"enName\":\"okayama\",\"name\":\"\u5CA1\u5C71\u770C\",\"surfaceSize\":711477,\"population\":1862000,\"temperature\":16.4,\"urban\":27,\"village\":19,\"forestSize\":484721,\"Hospitals\":196,\"College\":18},{\"id\":34,\"enName\":\"hiroshima\",\"name\":\"\u5E83\u5CF6\u770C\",\"surfaceSize\":847900,\"population\":2760000,\"temperature\":17.1,\"urban\":23,\"village\":22,\"forestSize\":610059,\"Hospitals\":\"\",\"College\":21},{\"id\":35,\"enName\":\"yamaguchi\",\"name\":\"\u5C71\u53E3\u770C\",\"surfaceSize\":611250,\"population\":1313000,\"temperature\":16.3,\"urban\":19,\"village\":13,\"forestSize\":436534,\"Hospitals\":\"\",\"College\":10},{\"id\":36,\"enName\":\"tokushima\",\"name\":\"\u5FB3\u5CF6\u770C\",\"surfaceSize\":414699,\"population\":704000,\"temperature\":17.2,\"urban\":24,\"village\":8,\"forestSize\":312858,\"Hospitals\":\"\",\"College\":4},{\"id\":37,\"enName\":\"kagawa\",\"name\":\"\u9999\u5DDD\u770C\",\"surfaceSize\":187691,\"population\":934000,\"temperature\":17.3,\"urban\":17,\"village\":8,\"forestSize\":87077,\"Hospitals\":\"\",\"College\":4},{\"id\":38,\"enName\":\"ehime\",\"name\":\"\u611B\u5A9B\u770C\",\"surfaceSize\":567598,\"population\":1306000,\"temperature\":17.3,\"urban\":20,\"village\":11,\"forestSize\":399954,\"Hospitals\":\"\",\"College\":5},{\"id\":39,\"enName\":\"kochi\",\"name\":\"\u9AD8\u77E5\u770C\",\"surfaceSize\":710291,\"population\":676000,\"temperature\":17.7,\"urban\":34,\"village\":11,\"forestSize\":591873,\"Hospitals\":\"\",\"College\":5},{\"id\":40,\"enName\":\"fukuoka\",\"name\":\"\u798F\u5CA1\u770C\",\"surfaceSize\":498764,\"population\":5116000,\"temperature\":18,\"urban\":60,\"village\":43,\"forestSize\":221842,\"Hospitals\":\"\",\"College\":35},{\"id\":41,\"enName\":\"shiga\",\"name\":\"\u4F50\u8CC0\u770C\",\"surfaceSize\":244067,\"population\":801000,\"temperature\":17.7,\"urban\":20,\"village\":10,\"forestSize\":110501,\"Hospitals\":\"\",\"College\":2},{\"id\":42,\"enName\":\"nagasaki\",\"name\":\"\u9577\u5D0E\u770C\",\"surfaceSize\":413099,\"population\":1283000,\"temperature\":17.8,\"urban\":21,\"village\":13,\"forestSize\":241657,\"Hospitals\":\"\",\"College\":8},{\"id\":43,\"enName\":\"kumamoto\",\"name\":\"\u718A\u672C\u770C\",\"surfaceSize\":740918,\"population\":1718000,\"temperature\":17.7,\"urban\":45,\"village\":19,\"forestSize\":457635,\"Hospitals\":\"\",\"College\":9},{\"id\":44,\"enName\":\"oita\",\"name\":\"\u5927\u5206\u770C\",\"surfaceSize\":634070,\"population\":1107000,\"temperature\":17.4,\"urban\":18,\"village\":14,\"forestSize\":448629,\"Hospitals\":\"\",\"College\":5},{\"id\":45,\"enName\":\"s\",\"name\":\"\u5BAE\u5D0E\u770C\",\"surfaceSize\":773424,\"population\":1052000,\"temperature\":18.2,\"urban\":26,\"village\":9,\"forestSize\":584379,\"Hospitals\":\"\",\"College\":7},{\"id\":46,\"enName\":\"kagoshima\",\"name\":\"\u9E7F\u5150\u5CF6\u770C\",\"surfaceSize\":918633,\"population\":1563000,\"temperature\":19.3,\"urban\":43,\"village\":19,\"forestSize\":584839,\"Hospitals\":\"\",\"College\":6},{\"id\":47,\"enName\":\"okinawa\",\"name\":\"\u6C96\u7E04\u770C\",\"surfaceSize\":228215,\"population\":1468000,\"temperature\":23.7,\"urban\":41,\"village\":11,\"forestSize\":106409,\"Hospitals\":\"\",\"College\":8}]}"
 --- !u!4 &1208150711
 Transform:
   m_ObjectHideFlags: 0
@@ -1027,6 +1145,56 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1301783617
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1301783618}
+  - component: {fileID: 1301783619}
+  m_Layer: 5
+  m_Name: EnemyCard
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1301783618
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301783617}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1054134993}
+  m_Father: {fileID: 378646988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 350}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1301783619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301783617}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a18cd5ee10b31e145a2eb7e2ed4a7649, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _cardView: {fileID: 1054134994}
 --- !u!1 &1343283156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1533,6 +1701,7 @@ MonoBehaviour:
   _readyButton: {fileID: 1648946224}
   _cardPrefab: {fileID: 4099176510629223985, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
   _selectCardView: {fileID: 579487257}
+  _enemyCardView: {fileID: 1301783619}
   _gameEndView: {fileID: 1103294395}
   _themeText: {fileID: 95246859}
 --- !u!114 &1713315816

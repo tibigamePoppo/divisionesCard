@@ -15,6 +15,7 @@ public class IngameView : MonoBehaviour
     [SerializeField] private Button _readyButton;
     [SerializeField] private CardView _cardPrefab;
     [SerializeField] private SelectCardView _selectCardView;
+    [SerializeField] private SelectCardView _enemyCardView;
     [SerializeField] private GameEndView _gameEndView;
     [SerializeField] private TextMeshProUGUI _themeText;
     private List<CardView> _playerHands = new List<CardView>();
@@ -67,6 +68,15 @@ public class IngameView : MonoBehaviour
         }
     }
 
+    public void EnemyCardSet(DivisionData data)
+    {
+        _enemyCardView.ShowSelectCard(data);
+    }
+
+    public void EnemyCardHide()
+    {
+        _enemyCardView.HideSelectCard();
+    }
     public void HidePreviewCard()
     {
         _selectCardView.HideSelectCard();

@@ -7,6 +7,7 @@ public class IngameStateController
     private StateBase<Unit> _stageReadyState;
     private StateBase<Unit> _playerReadyState; 
     private StateBase<SelectArg> _cardSelectState;
+    private StateBase<EnemySelectArg> _enemyCardSelectState;
     private StateBase<Unit> _drawState;
     private StateBase<BattleArg> _battleState;
     private StateBase<EndArg> _endState;
@@ -20,9 +21,11 @@ public class IngameStateController
         _stageReadyState = new StageRaadyState<Unit>();
         _playerReadyState = new PlayerReadyState<Unit>();
         _cardSelectState = new CardSelectState<SelectArg>();
+        _enemyCardSelectState = new EnemyCardSelectState<EnemySelectArg>();
         _drawState = new DrawState<Unit>();
         _battleState = new BattleState<BattleArg>();
         _endState = new GameEndState<EndArg>();
+        _enemyCardSelectState.Init(view);
         _stageReadyState.Init(view);
         _playerReadyState.Init(view);
         _cardSelectState.Init(view);
@@ -52,10 +55,14 @@ public class IngameStateController
                 _cardSelectState.StateAction(selectArg);
                 break;
             case StateType.EnemyCardSelect:
+                EnemySelectArg enemySelectArg = new EnemySelectArg();
+                enemySelectArg.card = _model.EnemySelectCardData;
+                _enemyCardSelectState.StateAction(enemySelectArg);
                 break;
             case StateType.Battle:
                 BattleArg battleArg = new BattleArg();
                 battleArg.curendHand = _model.playerDeck;
+                battleArg.card = _model.EnemySelectCardData;
                 _battleState.StateAction(battleArg);
                 break;
             case StateType.GameEnd:
@@ -72,9 +79,16 @@ public class SelectArg
 {
     public List<DivisionData> deck;
 }
+
+public class EnemySelectArg
+{
+    public DivisionData card;
+}
+
 public class BattleArg
 {
     public List<DivisionData> curendHand;
+    public DivisionData card;
 }
 public class EndArg
 {

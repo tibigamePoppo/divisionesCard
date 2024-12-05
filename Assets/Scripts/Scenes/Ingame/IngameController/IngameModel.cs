@@ -25,6 +25,7 @@ public class IngameModel
 
     private DivisionData _playerSelectCard;
     private DivisionData _enemySelectCard;
+    public DivisionData EnemySelectCardData { get => _enemySelectCard; }
     private String _winnerName;
 
     public void Init()

@@ -7,6 +7,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using TMPro;
 
 public class IngameView : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class IngameView : MonoBehaviour
     [SerializeField] private CardView _cardPrefab;
     [SerializeField] private SelectCardView _selectCardView;
     [SerializeField] private GameEndView _gameEndView;
+    [SerializeField] private TextMeshProUGUI _themeText;
     private List<CardView> _playerHands = new List<CardView>();
     private Subject<DivisionData> _selectedCard = new Subject<DivisionData>();
     public IObservable<DivisionData> SelectedCard => _selectedCard;
@@ -79,6 +81,39 @@ public class IngameView : MonoBehaviour
         else
         {
             _gameEndView.Hide();
+        }
+    }
+
+    public void SetThemeText(DivisionProfileType text)
+    {
+        switch (text)
+        {
+            case DivisionProfileType.surfice:
+                _themeText.text = "ñ êœ(2022)";
+                break;
+            case DivisionProfileType.population:
+                _themeText.text = "êlå˚(2022)";
+                break;
+            case DivisionProfileType.temperature:
+                _themeText.text = "ïΩãœãCâ∑(2022)";
+                break;
+            case DivisionProfileType.urban:
+                _themeText.text = "ésãÊêî(2022)";
+                break;
+            case DivisionProfileType.village:
+                _themeText.text = "í¨ë∫êî(2022)";
+                break;
+            case DivisionProfileType.forestSize:
+                _themeText.text = "êXó—ñ êœ(ha)(2019)";
+                break;
+            case DivisionProfileType.Hospitals:
+                _themeText.text = "ïaâ@êî(2022)";
+                break;
+            case DivisionProfileType.College:
+                _themeText.text = "ëÂäwêî(2022)";
+                break;
+            default:
+                break;
         }
     }
 }

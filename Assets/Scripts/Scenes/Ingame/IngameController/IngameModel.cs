@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using TMPro.Examples;
 using UniRx;
 public class IngameModel
 {
     private const int PLAYERHANDCOUNT = 5;//ÉvÉåÉCÉÑÅ[ÇÃéËéDÇÃñáêî
 
     private Subject<Unit> _stageReady = new Subject<Unit>();
+    private ReactiveProperty<DivisionProfileType> _updateTheme = new ReactiveProperty<DivisionProfileType>();
+    public IObservable<DivisionProfileType> UpdateTheme => _updateTheme;
     public IObservable<Unit> StageReady => _stageReady;
     private ReactiveProperty<StateType> _state = new ReactiveProperty<StateType>();
     public IObservable<StateType> State => _state;
@@ -43,6 +46,7 @@ public class IngameModel
 
         State.Where(state => state == StateType.Battle)
             .Subscribe(_ => Battle());
+        UpdateThemeValue();
     }
 
     private void CreateDeck()
@@ -102,12 +106,12 @@ public class IngameModel
     {
 
         //TODO:Ç∆ÇËÇ†Ç¶Ç∏ñ êœÇÃÇ›Ç≈èüïâ
-        if (_playerSelectCard.surfaceSize > _enemySelectCard.surfaceSize)
+        if (ValueByData(_playerSelectCard) > ValueByData(_enemySelectCard))
         {
             _winnerName = "Player";
             UnityEngine.Debug.Log("PlayerWin");
         }
-        else if (_playerSelectCard.surfaceSize < _enemySelectCard.surfaceSize)
+        else if (ValueByData(_playerSelectCard) < ValueByData(_enemySelectCard))
         {
             _winnerName = "Enemy";
             UnityEngine.Debug.Log("EnemyWin");
@@ -126,6 +130,39 @@ public class IngameModel
         else
         {
             _state.Value = StateType.Draw;
+            UpdateThemeValue();
         }
+    }
+
+    private float ValueByData(DivisionData data)
+    {
+        switch (_updateTheme.Value)
+        {
+            case DivisionProfileType.surfice:
+                return data.surfaceSize;
+            case DivisionProfileType.population:
+                return data.population;
+            case DivisionProfileType.temperature:
+                return data.temperature;
+            case DivisionProfileType.urban:
+                return data.urban;
+            case DivisionProfileType.village:
+                return data.village;
+            case DivisionProfileType.forestSize:
+                return data.forestSize;
+            case DivisionProfileType.Hospitals:
+                return data.Hospitals;
+            case DivisionProfileType.College:
+                return data.College;
+            default:
+                return 0;
+        }
+    }
+
+    private void UpdateThemeValue()
+    {
+        int maxCount = Enum.GetNames(typeof(DivisionProfileType)).Length;
+        int number = UnityEngine.Random.Range(0, maxCount);
+        _updateTheme.Value = (DivisionProfileType)Enum.ToObject(typeof(DivisionProfileType), number);
     }
 }

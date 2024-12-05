@@ -14,6 +14,7 @@ public class IngameView : MonoBehaviour
     [SerializeField] private Button _readyButton;
     [SerializeField] private CardView _cardPrefab;
     [SerializeField] private SelectCardView _selectCardView;
+    [SerializeField] private GameEndView _gameEndView;
     private List<CardView> _playerHands = new List<CardView>();
     private Subject<DivisionData> _selectedCard = new Subject<DivisionData>();
     public IObservable<DivisionData> SelectedCard => _selectedCard;
@@ -22,7 +23,7 @@ public class IngameView : MonoBehaviour
     public void Init()
     {
         _selectCardView.Init();
-
+        _gameEndView.Init();
         _readyButton.interactable = false;
         _readyButton.OnClickAsObservable()
             .Where(_ => _selectCardData != null)
@@ -67,5 +68,17 @@ public class IngameView : MonoBehaviour
     public void HidePreviewCard()
     {
         _selectCardView.HideSelectCard();
+    }
+
+    public void ChangeActiveGameEndPanel(bool active,string winnerName)
+    {
+        if (active)
+        {
+            _gameEndView.Show(winnerName);
+        }
+        else
+        {
+            _gameEndView.Hide();
+        }
     }
 }

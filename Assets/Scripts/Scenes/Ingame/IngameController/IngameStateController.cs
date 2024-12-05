@@ -9,6 +9,7 @@ public class IngameStateController
     private StateBase<SelectArg> _cardSelectState;
     private StateBase<Unit> _drawState;
     private StateBase<BattleArg> _battleState;
+    private StateBase<EndArg> _endState;
     private IngameModel _model;
     private IngameView _view;
     public void Init(IngameModel model,IngameView view)
@@ -21,11 +22,13 @@ public class IngameStateController
         _cardSelectState = new CardSelectState<SelectArg>();
         _drawState = new DrawState<Unit>();
         _battleState = new BattleState<BattleArg>();
+        _endState = new GameEndState<EndArg>();
         _stageReadyState.Init(view);
         _playerReadyState.Init(view);
         _cardSelectState.Init(view);
         _drawState.Init(view);
         _battleState.Init(view);
+        _endState.Init(view);
 
         model.State.Subscribe(StateType => ChangeState(StateType)).AddTo(view);
     }
@@ -55,6 +58,11 @@ public class IngameStateController
                 batleArg.curendHand = _model.playerDeck;
                 _battleState.StateAction(batleArg);
                 break;
+            case StateType.GameEnd:
+                EndArg endArg = new EndArg();
+                endArg.winnerName = _model.WinnerName;
+                _endState.StateAction(endArg);
+                break;
             default:
                 break;
         }
@@ -67,6 +75,10 @@ public class SelectArg
 public class BattleArg
 {
     public List<DivisionData> curendHand;
+}
+public class EndArg
+{
+    public string winnerName;
 }
 
 

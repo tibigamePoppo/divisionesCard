@@ -18,9 +18,12 @@ public class IngameModel
     public List<DivisionData> playerDeck { get { return _playerHnad; } }
 
     public DivisionData PlayerSelectCard { get => _playerSelectCard; }
+    public string WinnerName { get => _winnerName; }
 
     private DivisionData _playerSelectCard;
     private DivisionData _enemySelectCard;
+    private String _winnerName;
+
     public void Init()
     {
         CreateDeck();
@@ -101,16 +104,20 @@ public class IngameModel
         //TODO:‚Æ‚è‚ ‚¦‚¸–ÊÏ‚Ì‚Ý‚ÅŸ•‰
         if (_playerSelectCard.surfaceSize > _enemySelectCard.surfaceSize)
         {
+            _winnerName = "Player";
             UnityEngine.Debug.Log("PlayerWin");
         }
         else if (_playerSelectCard.surfaceSize < _enemySelectCard.surfaceSize)
         {
+            _winnerName = "Enemy";
             UnityEngine.Debug.Log("EnemyWin");
         }
         else
         {
+            _winnerName = "None";
             UnityEngine.Debug.Log("Draw");
         }
+
         if (deck.Count < 2)
         {
             UnityEngine.Debug.Log("GameEnd");

@@ -54,9 +54,9 @@ public class IngameStateController
             case StateType.EnemyCardSelect:
                 break;
             case StateType.Battle:
-                BattleArg batleArg = new BattleArg();
-                batleArg.curendHand = _model.playerDeck;
-                _battleState.StateAction(batleArg);
+                BattleArg battleArg = new BattleArg();
+                battleArg.curendHand = _model.playerDeck;
+                _battleState.StateAction(battleArg);
                 break;
             case StateType.GameEnd:
                 EndArg endArg = new EndArg();

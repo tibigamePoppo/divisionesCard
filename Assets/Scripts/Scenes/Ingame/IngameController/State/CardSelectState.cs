@@ -13,10 +13,10 @@ public class CardSelectState<T> : StateBase<T>
     public override void StateAction(T arg1)
     {
         Debug.Log("CardSelectState.StateAction");
-        SelectArg drawArg = arg1 as SelectArg;
-        for (int i = 0; i < drawArg.deck.Count; i++)
+        SelectArg selectArg = arg1 as SelectArg;
+        for (int i = 0; i < selectArg.deck.Count; i++)
         {
-            view.CreateHand(drawArg.deck[i]);
+            view.CreateHand(selectArg.deck[i]);
         }
     }
 }

@@ -12,8 +12,8 @@ public class BattleState<T> : StateBase<T>
 
     public override void StateAction(T arg1)
     {
-        BattleArg drawArg = arg1 as BattleArg;
-        view.UpdatePlayerHand(drawArg.curendHand.ToArray());
+        BattleArg battleArg = arg1 as BattleArg;
+        view.UpdatePlayerHand(battleArg.curendHand.ToArray());
         view.HidePreviewCard();
         base.StateAction(arg1);
     }

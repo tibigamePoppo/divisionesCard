@@ -110,6 +110,7 @@ public class IngameModel
     {
 
         //TODO:????????????????????????
+        UnityEngine.Debug.Log($"current theme is {CurrentTheme}");
         UnityEngine.Debug.Log($"Player : {ValueByData(_playerSelectCard)}, enemy : {ValueByData(_enemySelectCard)}");
         if (ValueByData(_playerSelectCard) > ValueByData(_enemySelectCard))
         {
@@ -136,6 +137,7 @@ public class IngameModel
         }
         else
         {
+            await UniTask.Delay(TimeSpan.FromSeconds(2));
             UpdateThemeValue();
             _state.Value = StateType.Draw;
         }

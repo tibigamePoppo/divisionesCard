@@ -20,6 +20,10 @@ public class IngamePresenter : MonoBehaviour
         _ingameView.Init();
 
         _ingameView.SelectedCard.Where(_ => _ingameModel.CurrentState == StateType.CardSelect).Subscribe(data =>_ingameModel.SedPlayerSelectCard(data)).AddTo(this);
-        _ingameModel.UpdateTheme.Subscribe(theme => _ingameView.SetThemeText(theme)).AddTo(this);
+        _ingameModel.UpdateTheme.Subscribe(theme =>
+        {
+            _ingameView.SetThemeText(theme);
+            _ingameView.SetTheme(theme);
+        }).AddTo(this);
     }
 }

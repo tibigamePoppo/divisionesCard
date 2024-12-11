@@ -2,15 +2,17 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Cysharp.Threading.Tasks;
 using TMPro.Examples;
 using UniRx;
 public class IngameModel
 {
-    private const int PLAYERHANDCOUNT = 5;//プレイヤーの手札の枚数
+    private const int PLAYERHANDCOUNT = 5;//?v???C???[?????D??????
 
     private Subject<Unit> _stageReady = new Subject<Unit>();
     private ReactiveProperty<DivisionProfileType> _updateTheme = new ReactiveProperty<DivisionProfileType>();
     public IObservable<DivisionProfileType> UpdateTheme => _updateTheme;
+    public DivisionProfileType CurrentTheme { get { return _updateTheme.Value; } }
     public IObservable<Unit> StageReady => _stageReady;
     private ReactiveProperty<StateType> _state = new ReactiveProperty<StateType>();
     public IObservable<StateType> State => _state;
@@ -46,8 +48,9 @@ public class IngameModel
             .Subscribe(_ => EnemySelectCard());
 
         State.Where(state => state == StateType.Battle)
-            .Subscribe(_ => Battle());
-        UpdateThemeValue();
+            .Subscribe(_ => Battle().Forget());
+
+        //UpdateThemeValue();
     }
 
     private void CreateDeck()
@@ -79,7 +82,7 @@ public class IngameModel
     }
 
     /// <summary>
-    /// プレイヤーの手札の設定
+    /// ?v???C???[?????D??????
     /// </summary>
     /// <param name="type"></param>
     public void PlayerHandSet(DivisionData type)
@@ -103,10 +106,11 @@ public class IngameModel
         _state.Value = StateType.Battle;
     }
 
-    public void Battle()
+    public async UniTaskVoid Battle()
     {
 
-        //TODO:とりあえず面積のみで勝負
+        //TODO:????????????????????????
+        UnityEngine.Debug.Log($"Player : {ValueByData(_playerSelectCard)}, enemy : {ValueByData(_enemySelectCard)}");
         if (ValueByData(_playerSelectCard) > ValueByData(_enemySelectCard))
         {
             _winnerName = "Player";
@@ -123,6 +127,8 @@ public class IngameModel
             UnityEngine.Debug.Log("Draw");
         }
 
+        await UniTask.Delay(TimeSpan.FromSeconds(1));
+
         if (deck.Count < 2)
         {
             UnityEngine.Debug.Log("GameEnd");
@@ -130,8 +136,8 @@ public class IngameModel
         }
         else
         {
-            _state.Value = StateType.Draw;
             UpdateThemeValue();
+            _state.Value = StateType.Draw;
         }
     }
 

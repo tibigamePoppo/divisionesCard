@@ -10,9 +10,9 @@ public class SelectCardView : MonoBehaviour
         _cardView.gameObject.SetActive(false);
     }
 
-    public void ShowSelectCard(DivisionData division)
+    public void ShowSelectCard(DivisionData division,DivisionProfileType type)
     {
-        _cardView.Init(division);
+        _cardView.Init(division, type);
         _cardView.gameObject.SetActive(true);
     }
     public void HideSelectCard()

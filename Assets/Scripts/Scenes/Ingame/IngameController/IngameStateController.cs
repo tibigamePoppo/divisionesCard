@@ -33,11 +33,12 @@ public class IngameStateController
         _battleState.Init(view);
         _endState.Init(view);
 
-        model.State.Subscribe(StateType => ChangeState(StateType)).AddTo(view);
+        model.State.Subscribe(StateType => ChangeState(StateType).Forget()).AddTo(view);
     }
 
-    public void ChangeState(StateType state)
+    public async UniTaskVoid ChangeState(StateType state)
     {
+        await UniTask.WaitForFixedUpdate();
         switch (state)
         {
             case StateType.StageReady:
@@ -61,8 +62,10 @@ public class IngameStateController
                 break;
             case StateType.Battle:
                 BattleArg battleArg = new BattleArg();
-                battleArg.curendHand = _model.playerDeck;
-                battleArg.card = _model.EnemySelectCardData;
+                battleArg.curentHand = _model.playerDeck;
+                battleArg.enemyCard = _model.EnemySelectCardData;
+                battleArg.playerCard = _model.PlayerSelectCard;
+                battleArg.winnerName = _model.WinnerName;
                 _battleState.StateAction(battleArg);
                 break;
             case StateType.GameEnd:
@@ -87,8 +90,10 @@ public class EnemySelectArg
 
 public class BattleArg
 {
-    public List<DivisionData> curendHand;
-    public DivisionData card;
+    public List<DivisionData> curentHand;
+    public DivisionData enemyCard;
+    public DivisionData playerCard;
+    public string winnerName;
 }
 public class EndArg
 {

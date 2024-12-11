@@ -18,5 +18,6 @@ public class CardSelectState<T> : StateBase<T>
         {
             view.CreateHand(selectArg.deck[i]);
         }
+        view.UpdatePlayerHand();
     }
 }

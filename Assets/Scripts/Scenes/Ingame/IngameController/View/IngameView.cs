@@ -1,6 +1,5 @@
 using Cysharp.Threading.Tasks;
 using Scenes.Ingame.Card;
-using System.Collections;
 using System.Linq;
 using UniRx;
 using UnityEngine;
@@ -11,14 +10,16 @@ using TMPro;
 
 public class IngameView : MonoBehaviour
 {
-    [SerializeField] private Transform _playerHnadArea;//éËéDÇê∂ê¨Ç∑ÇÈà íu
+    [SerializeField] private Transform _playerHnadArea;//???D?????????????u
     [SerializeField] private Button _readyButton;
     [SerializeField] private CardView _cardPrefab;
     [SerializeField] private SelectCardView _selectCardView;
     [SerializeField] private SelectCardView _enemyCardView;
+    [SerializeField] private BattleResultView _battleResultView;
     [SerializeField] private GameEndView _gameEndView;
     [SerializeField] private TextMeshProUGUI _themeText;
     private List<CardView> _playerHands = new List<CardView>();
+    private DivisionProfileType _theme;
     private Subject<DivisionData> _selectedCard = new Subject<DivisionData>();
     public IObservable<DivisionData> SelectedCard => _selectedCard;
     private bool _selected = false;
@@ -26,7 +27,9 @@ public class IngameView : MonoBehaviour
     public void Init()
     {
         _selectCardView.Init();
+        _enemyCardView.Init();
         _gameEndView.Init();
+        _battleResultView.Init();
         _readyButton.interactable = false;
         _readyButton.OnClickAsObservable()
             .Where(_ => _selectCardData != null)
@@ -36,28 +39,33 @@ public class IngameView : MonoBehaviour
             }).AddTo(this);
     }
 
+    public void SetTheme(DivisionProfileType type)
+    {
+        _theme = type;
+    }
+
     /// <summary>
-    /// éËéDÇÃê∂ê¨
+    /// ???D??????
     /// </summary>
     public void CreateHand(DivisionData divisionData)
     {
         if (_playerHands.Select(v => v.Data).Contains(divisionData)) return;
-        Debug.Log($"Create card is {divisionData.name}");
+        //Debug.Log($"Create card is {divisionData.name}");
         var card = Instantiate(_cardPrefab, _playerHnadArea.position, Quaternion.identity, _playerHnadArea);
         _playerHands.Add(card);
-        card.Init(divisionData);
+        card.Init(divisionData, _theme);
         card.OnClick
             .Subscribe(data => SelectCard(data)).AddTo(this);
     }
 
     public void SelectCard(DivisionData divisionData)
     {
-        _selectCardView.ShowSelectCard(divisionData);
+        _selectCardView.ShowSelectCard(divisionData,_theme);
         _selectCardData = divisionData;
         _readyButton.interactable = true;
     }
 
-    public void UpdatePlayerHand(DivisionData[] divisionDatas)
+    public void RemovePlayerHand(DivisionData[] divisionDatas)
     {
         var removeCard = _playerHands.Select(v => v.Data).Except(divisionDatas).ToArray();
         foreach (var card in removeCard)
@@ -68,9 +76,17 @@ public class IngameView : MonoBehaviour
         }
     }
 
+    public void UpdatePlayerHand()
+    {
+        foreach (var card in _playerHands)
+        {
+            card.UpdateValue(_theme);
+        }
+    }
+
     public void EnemyCardSet(DivisionData data)
     {
-        _enemyCardView.ShowSelectCard(data);
+        _enemyCardView.ShowSelectCard(data,_theme);
     }
 
     public void EnemyCardHide()
@@ -80,6 +96,16 @@ public class IngameView : MonoBehaviour
     public void HidePreviewCard()
     {
         _selectCardView.HideSelectCard();
+    }
+
+    public void ShowBattleResultPanel(DivisionData player,DivisionData enemy,string winnerName)
+    {
+        _battleResultView.ShowBattleResultPanel(player, enemy, winnerName, _theme);
+    }
+
+    public void HideBattleResultPanel()
+    {
+        _battleResultView.HidePanel();
     }
 
     public void ChangeActiveGameEndPanel(bool active,string winnerName)
@@ -99,28 +125,28 @@ public class IngameView : MonoBehaviour
         switch (text)
         {
             case DivisionProfileType.surfice:
-                _themeText.text = "ñ êœ(2022)";
+                _themeText.text = "????(2022)";
                 break;
             case DivisionProfileType.population:
-                _themeText.text = "êlå˚(2022)";
+                _themeText.text = "?l??(2022)";
                 break;
             case DivisionProfileType.temperature:
-                _themeText.text = "ïΩãœãCâ∑(2022)";
+                _themeText.text = "?????C??(2022)";
                 break;
             case DivisionProfileType.urban:
-                _themeText.text = "ésãÊêî(2022)";
+                _themeText.text = "?s????(2022)";
                 break;
             case DivisionProfileType.village:
-                _themeText.text = "í¨ë∫êî(2022)";
+                _themeText.text = "??????(2022)";
                 break;
             case DivisionProfileType.forestSize:
-                _themeText.text = "êXó—ñ êœ(ha)(2019)";
+                _themeText.text = "?X??????(ha)(2019)";
                 break;
             case DivisionProfileType.Hospitals:
-                _themeText.text = "ïaâ@êî(2022)";
+                _themeText.text = "?a?@??(2022)";
                 break;
             case DivisionProfileType.College:
-                _themeText.text = "ëÂäwêî(2022)";
+                _themeText.text = "???w??(2022)";
                 break;
             default:
                 break;

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
 
@@ -22,13 +20,13 @@ public class BattleState<T> : StateBase<T>
     {
         view.RemovePlayerHand(battleArg.curentHand.ToArray());
         view.EnemyCardSet(battleArg.enemyCard);
+        view.ReadyButtonInteractable(false);
         await UniTask.Delay(System.TimeSpan.FromSeconds(1));
         view.ShowBattleResultPanel(battleArg.playerCard, battleArg.enemyCard, battleArg.winnerName);
         await UniTask.Delay(System.TimeSpan.FromSeconds(3));
         view.HideBattleResultPanel();
         view.HidePreviewCard();
         view.EnemyCardHide();
-
+        view.UpdateScore("Player", battleArg.playerScore, "Enemy", battleArg.enemyScore);
     }
-
 }

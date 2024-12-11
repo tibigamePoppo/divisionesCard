@@ -48,32 +48,31 @@ namespace Scenes.Ingame.Card
 
         private void Value(DivisionProfileType type)
         {
-            Debug.Log($"type : {type}");
             switch (type)
             {
                 case DivisionProfileType.surfice:
-                    _value.text = _data.surfaceSize.ToString();
+                    _value.text = $"{_data.surfaceSize/1000} k";
                     break;
                 case DivisionProfileType.population:
-                    _value.text = _data.population.ToString();
+                    _value.text = $"{_data.population/1000} k";
                     break;
                 case DivisionProfileType.temperature:
-                    _value.text = _data.temperature.ToString();
+                    _value.text = $"{_data.temperature} c";
                     break;
                 case DivisionProfileType.urban:
-                    _value.text = _data.urban.ToString() ;
+                    _value.text = $"{_data.urban} 個";
                     break;
                 case DivisionProfileType.village:
-                    _value.text = _data.village.ToString();
+                    _value.text = $"{_data.village} 個";
                     break;
                 case DivisionProfileType.forestSize:
-                    _value.text = _data.forestSize.ToString();
+                    _value.text = $"{_data.forestSize/1000} k ha";
                     break;
                 case DivisionProfileType.Hospitals:
-                    _value.text = _data.Hospitals.ToString() ;
+                    _value.text = $"{_data.Hospitals} 個";
                     break;
                 case DivisionProfileType.College:
-                    _value.text = _data.College.ToString();
+                    _value.text = $"{_data.College} 個";
                     break;
                 default:
                     break;

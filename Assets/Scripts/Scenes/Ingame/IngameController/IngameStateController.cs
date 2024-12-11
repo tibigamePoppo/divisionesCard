@@ -66,6 +66,8 @@ public class IngameStateController
                 battleArg.enemyCard = _model.EnemySelectCardData;
                 battleArg.playerCard = _model.PlayerSelectCard;
                 battleArg.winnerName = _model.WinnerName;
+                battleArg.playerScore = _model.CurrentPlayerScore;
+                battleArg.enemyScore = _model.CurrentEnemyScore;
                 _battleState.StateAction(battleArg);
                 break;
             case StateType.GameEnd:
@@ -94,6 +96,8 @@ public class BattleArg
     public DivisionData enemyCard;
     public DivisionData playerCard;
     public string winnerName;
+    public int playerScore;
+    public int enemyScore;
 }
 public class EndArg
 {

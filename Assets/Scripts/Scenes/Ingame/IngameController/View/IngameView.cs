@@ -17,6 +17,7 @@ public class IngameView : MonoBehaviour
     [SerializeField] private SelectCardView _enemyCardView;
     [SerializeField] private BattleResultView _battleResultView;
     [SerializeField] private GameEndView _gameEndView;
+    [SerializeField] private ScoreView _scoreView;
     [SerializeField] private TextMeshProUGUI _themeText;
     private List<CardView> _playerHands = new List<CardView>();
     private DivisionProfileType _theme;
@@ -30,6 +31,7 @@ public class IngameView : MonoBehaviour
         _enemyCardView.Init();
         _gameEndView.Init();
         _battleResultView.Init();
+        _scoreView.Init();
         _readyButton.interactable = false;
         _readyButton.OnClickAsObservable()
             .Where(_ => _selectCardData != null)
@@ -62,7 +64,12 @@ public class IngameView : MonoBehaviour
     {
         _selectCardView.ShowSelectCard(divisionData,_theme);
         _selectCardData = divisionData;
-        _readyButton.interactable = true;
+        ReadyButtonInteractable(true);
+    }
+
+    public void ReadyButtonInteractable(bool value)
+    {
+        _readyButton.interactable = value;
     }
 
     public void RemovePlayerHand(DivisionData[] divisionDatas)
@@ -118,6 +125,11 @@ public class IngameView : MonoBehaviour
         {
             _gameEndView.Hide();
         }
+    }
+
+    public void UpdateScore(string user1, int user1point, string user2, int user2point)
+    {
+        _scoreView.UpdateScoreText(user1, user1point, user2, user2point);
     }
 
     public void SetThemeText(DivisionProfileType text)

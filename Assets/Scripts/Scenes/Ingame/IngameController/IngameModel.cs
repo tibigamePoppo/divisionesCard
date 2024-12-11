@@ -30,6 +30,11 @@ public class IngameModel
     public DivisionData EnemySelectCardData { get => _enemySelectCard; }
     private String _winnerName;
 
+    private int _playerScore = 0;
+    private int _enemyScore = 0;
+    public int CurrentPlayerScore { get => _playerScore; }
+    public int CurrentEnemyScore { get => _enemyScore; }
+
     public void Init()
     {
         CreateDeck();
@@ -115,11 +120,13 @@ public class IngameModel
         if (ValueByData(_playerSelectCard) > ValueByData(_enemySelectCard))
         {
             _winnerName = "Player";
+            _playerScore++;
             UnityEngine.Debug.Log("PlayerWin");
         }
         else if (ValueByData(_playerSelectCard) < ValueByData(_enemySelectCard))
         {
             _winnerName = "Enemy";
+            _enemyScore++;
             UnityEngine.Debug.Log("EnemyWin");
         }
         else

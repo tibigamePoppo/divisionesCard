@@ -694,6 +694,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453200691}
     m_Modifications:
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -797,6 +817,10 @@ PrefabInstance:
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091330026411680984, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1092,6 +1116,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1453200691}
     m_Modifications:
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2200317981111043677, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_Colors.m_DisabledColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1195,6 +1239,10 @@ PrefabInstance:
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8091330026411680984, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2495,6 +2543,7 @@ GameObject:
   - component: {fileID: 1648946226}
   - component: {fileID: 1648946225}
   - component: {fileID: 1648946224}
+  - component: {fileID: 1648946227}
   m_Layer: 5
   m_Name: ReadyButton
   m_TagString: Untagged
@@ -2604,6 +2653,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1648946222}
   m_CullTransparentMesh: 1
+--- !u!114 &1648946227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648946222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8718ef177d464d5f99f6d0f320573bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1713315813
 GameObject:
   m_ObjectHideFlags: 0

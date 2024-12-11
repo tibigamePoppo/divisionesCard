@@ -96,7 +96,7 @@ public class IngameModel
         _deck.Remove(type);
     }
 
-    public void SedPlayerSelectCard(DivisionData data)
+    public void SetPlayerSelectCard(DivisionData data)
     {
         _playerSelectCard = data;
         _state.Value = StateType.EnemyCardSelect;

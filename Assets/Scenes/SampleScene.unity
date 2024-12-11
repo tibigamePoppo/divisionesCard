@@ -739,7 +739,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_Name
-      value: Card (1)
+      value: EnemyCard
       objectReference: {fileID: 0}
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_IsActive
@@ -1003,7 +1003,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_Name
-      value: Card
+      value: PlayerCard
       objectReference: {fileID: 0}
     - target: {fileID: 4984771885301278158, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
       propertyPath: m_IsActive
@@ -1019,6 +1019,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
   m_PrefabInstance: {fileID: 600982411}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &600982414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099176510629223985, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+  m_PrefabInstance: {fileID: 600982411}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6176abd16dea545409cc1b461034c091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &718163780
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1715,6 +1726,7 @@ GameObject:
   - component: {fileID: 1453200691}
   - component: {fileID: 1453200693}
   - component: {fileID: 1453200692}
+  - component: {fileID: 1453200694}
   m_Layer: 5
   m_Name: BattlePanel
   m_TagString: Untagged
@@ -1759,7 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1784,6 +1796,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1453200690}
   m_CullTransparentMesh: 1
+--- !u!114 &1453200694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1453200690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac92065e9a8844b7b76b8601cb14581, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerCardView: {fileID: 600982414}
+  _enemyCardView: {fileID: 1473327920}
+  _winnerText: {fileID: 1742851168}
+--- !u!114 &1473327920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4099176510629223985, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+  m_PrefabInstance: {fileID: 428843643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6176abd16dea545409cc1b461034c091, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1534566972
 GameObject:
   m_ObjectHideFlags: 0
@@ -2157,6 +2195,7 @@ MonoBehaviour:
   _cardPrefab: {fileID: 4099176510629223985, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
   _selectCardView: {fileID: 579487257}
   _enemyCardView: {fileID: 1301783619}
+  _battleResultView: {fileID: 1453200694}
   _gameEndView: {fileID: 1103294395}
   _themeText: {fileID: 95246859}
 --- !u!114 &1713315816

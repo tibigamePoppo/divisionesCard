@@ -73,6 +73,7 @@ public class IngameStateController
             case StateType.GameEnd:
                 EndArg endArg = new EndArg();
                 endArg.winnerName = _model.WinnerName;
+                endArg.score = _model.CurrentPlayerScore;
                 _endState.StateAction(endArg);
                 break;
             default:
@@ -102,6 +103,7 @@ public class BattleArg
 public class EndArg
 {
     public string winnerName;
+    public int score;
 }
 
 

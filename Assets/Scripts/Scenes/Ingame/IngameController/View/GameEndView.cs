@@ -1,19 +1,26 @@
 using UnityEngine;
+using UnityEngine.UI;
+using UniRx;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameEndView : MonoBehaviour
 {
     [SerializeField] private GameObject _panel;
     [SerializeField] private TextMeshProUGUI _winnerText;
+    [SerializeField] private TextMeshProUGUI _scoreText;
+    [SerializeField] private Button _retryButton;
     public void Init()
     {
         _panel.SetActive(false);
+        _retryButton.OnClickAsObservable().Subscribe(_ => SceneManager.LoadScene(SceneManager.GetActiveScene().name));
     }
 
-    public void Show(string winnerName)
+    public void Show(string winnerName,int score)
     {
         _panel.SetActive(true);
-        _winnerText.text = $"{winnerName} Ÿ—˜I";
+        _winnerText.text = $"{winnerName} ?????I";
+        _scoreText.text = $"Score : {score}";
     }
 
     public void Hide()

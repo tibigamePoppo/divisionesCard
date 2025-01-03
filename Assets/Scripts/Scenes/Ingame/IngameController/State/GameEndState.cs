@@ -15,6 +15,6 @@ public class GameEndState<T> : StateBase<T>
         Debug.Log("GameEndState.StateAction");
         Debug.Log("CardSelectState.StateAction");
         EndArg endArg = arg1 as EndArg;
-        view.ChangeActiveGameEndPanel(true, endArg.winnerName);
+        view.ChangeActiveGameEndPanel(true, endArg.winnerName, endArg.score);
     }
 }

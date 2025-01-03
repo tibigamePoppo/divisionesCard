@@ -131,11 +131,11 @@ public class IngameView : MonoBehaviour
         _battleResultView.HidePanel();
     }
 
-    public void ChangeActiveGameEndPanel(bool active,string winnerName)
+    public void ChangeActiveGameEndPanel(bool active,string winnerName,int socre)
     {
         if (active)
         {
-            _gameEndView.Show(winnerName);
+            _gameEndView.Show(winnerName, socre);
         }
         else
         {

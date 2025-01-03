@@ -17,8 +17,10 @@ public class IngameView : MonoBehaviour
     [SerializeField] private SelectCardView _enemyCardView;
     [SerializeField] private BattleResultView _battleResultView;
     [SerializeField] private GameEndView _gameEndView;
+    [SerializeField] private InformationPanelView _informationPanelView;
     [SerializeField] private ScoreView _scoreView;
     [SerializeField] private TextMeshProUGUI _themeText;
+
     private List<CardView> _playerHands = new List<CardView>();
     private DivisionProfileType _theme;
     private Subject<DivisionData> _selectedCard = new Subject<DivisionData>();
@@ -31,6 +33,7 @@ public class IngameView : MonoBehaviour
         _enemyCardView.Init();
         _gameEndView.Init();
         _battleResultView.Init();
+        _informationPanelView.Init();
         _scoreView.Init();
         _readyButton.interactable = false;
         _readyButton.OnClickAsObservable()
@@ -56,8 +59,21 @@ public class IngameView : MonoBehaviour
         var card = Instantiate(_cardPrefab, _playerHnadArea.position, Quaternion.identity, _playerHnadArea);
         _playerHands.Add(card);
         card.Init(divisionData, _theme);
+        card.SetScale(true);
         card.OnClick
             .Subscribe(data => SelectCard(data)).AddTo(this);
+        card.OnPointerOver
+            .Subscribe(data =>
+            {
+                if(data != null)
+                {
+                    _informationPanelView.ShowPanel(data);
+                }
+                else
+                {
+                    _informationPanelView.HidePanel();
+                }
+            }).AddTo(this);
     }
 
     public void SelectCard(DivisionData divisionData)

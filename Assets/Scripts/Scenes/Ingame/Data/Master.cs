@@ -17,7 +17,17 @@ public class DivisionData
 }
 
 [Serializable]
+public class DivisionProfile
+{
+    public int id;
+    public string name;
+    public string specialty;
+    public string profile;
+}
+
+[Serializable]
 public class Master
 {
     public DivisionData[] DivisionData;
+    public DivisionProfile[] DivisionProfile;
 }

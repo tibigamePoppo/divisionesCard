@@ -5,20 +5,28 @@ using System.Linq;
 using TMPro;
 using UniRx;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using DG.Tweening;
 
 namespace Scenes.Ingame.Card
 {
-    public class CardView : MonoBehaviour
+    public class CardView : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private TextMeshProUGUI _value;
         [SerializeField] private Image _image;
         [SerializeField] private SpritePool _spritePool;
         [SerializeField] private GameObject _greadEffect;
+        private Subject<DivisionData> _pointerOverEvent = new Subject<DivisionData>();
+        private Vector2 _nonSelectScale = new Vector2(1f,1f);
+        private Vector2 _selectScale = new Vector2(1.1f, 1.1f);
+        private bool _isScale = false;
+
         private Button _button;
         private Subject<DivisionData> _buttonClick = new Subject<DivisionData>();
         public IObservable<DivisionData> OnClick => _buttonClick;
+        public IObservable<DivisionData> OnPointerOver => _pointerOverEvent;
         private DivisionData _data;
         public DivisionData Data {  get { return _data; } }
 
@@ -112,6 +120,25 @@ namespace Scenes.Ingame.Card
                     break;
             }
             _greadEffect.SetActive(isActive);
+        }
+
+        public void SetScale(bool value)
+        {
+            _isScale = value;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            if (!_isScale) return;
+            transform.DOScale(_selectScale, 0.2f).SetEase(Ease.InOutQuad);
+            _pointerOverEvent.OnNext(_data);
+        }
+
+        public void OnPointerExit(PointerEventData eventData)
+        {
+            if (!_isScale) return;
+            transform.DOScale(_nonSelectScale, 0.2f).SetEase(Ease.InOutQuad);
+            _pointerOverEvent.OnNext(null);
         }
     }
 }

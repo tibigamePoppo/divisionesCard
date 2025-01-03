@@ -577,6 +577,140 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _user1Score: {fileID: 479160622}
   _user2Score: {fileID: 1816463899}
+--- !u!1 &267949903
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 267949904}
+  - component: {fileID: 267949906}
+  - component: {fileID: 267949905}
+  m_Layer: 5
+  m_Name: nameTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &267949904
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267949903}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1904168218}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &267949905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267949903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u540D\u524D"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &267949906
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267949903}
+  m_CullTransparentMesh: 0
 --- !u!1 &378646984
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,6 +811,7 @@ RectTransform:
   - {fileID: 1648946223}
   - {fileID: 1839936376}
   - {fileID: 113688892}
+  - {fileID: 1073970927}
   - {fileID: 1453200691}
   - {fileID: 1103294392}
   m_Father: {fileID: 0}
@@ -686,6 +821,43 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &385090324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 385090325}
+  m_Layer: 5
+  m_Name: Profile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &385090325
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 385090324}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 868894486}
+  - {fileID: 760909280}
+  m_Father: {fileID: 1073970927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -274, y: -157}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &428843643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1366,6 +1538,140 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
+--- !u!1 &760909279
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 760909280}
+  - component: {fileID: 760909282}
+  - component: {fileID: 760909281}
+  m_Layer: 5
+  m_Name: ProfileValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &760909280
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760909279}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 385090325}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 260, y: -70}
+  m_SizeDelta: {x: 700, y: 120}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &760909281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760909279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u65E5\u672C\u6700\u5317\u306E\u5927\u5730\u3067\u3001\u5E83\u5927\u306A\u81EA\u7136\u304C\u9B45\u529B\u3002\u56DB\u5B63\u6298\u3005\u306E\u666F\u8272\u304C\u697D\u3057\u3081\u3001\u7279\u306B\u51AC\u306F\u30B9\u30AD\u30FC\u3084\u30B9\u30CE\u30FC\u30DC\u30FC\u30C9\u304C\u76DB\u3093\u3002"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 42
+  m_fontSizeBase: 42
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &760909282
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760909279}
+  m_CullTransparentMesh: 0
 --- !u!1 &819304142
 GameObject:
   m_ObjectHideFlags: 0
@@ -1634,6 +1940,274 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843999245}
   m_CullTransparentMesh: 1
+--- !u!1 &868894485
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868894486}
+  - component: {fileID: 868894488}
+  - component: {fileID: 868894487}
+  m_Layer: 5
+  m_Name: ProfileTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &868894486
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868894485}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 385090325}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &868894487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868894485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u6982\u8981"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &868894488
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868894485}
+  m_CullTransparentMesh: 0
+--- !u!1 &891906587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 891906588}
+  - component: {fileID: 891906590}
+  - component: {fileID: 891906589}
+  m_Layer: 5
+  m_Name: specialtyTitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &891906588
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891906587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421500741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 30}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &891906589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891906587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u7279\u7523\u7269"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &891906590
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 891906587}
+  m_CullTransparentMesh: 0
 --- !u!1001 &1054134992
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1747,6 +2321,101 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6176abd16dea545409cc1b461034c091, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1073970926
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073970927}
+  - component: {fileID: 1073970929}
+  - component: {fileID: 1073970928}
+  - component: {fileID: 1073970930}
+  m_Layer: 5
+  m_Name: InformationPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1073970927
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073970926}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1992864308}
+  - {fileID: 1904168218}
+  - {fileID: 1421500741}
+  - {fileID: 385090325}
+  m_Father: {fileID: 378646988}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -300}
+  m_SizeDelta: {x: 800, y: 600}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1073970928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073970926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 0.5882353}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1073970929
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073970926}
+  m_CullTransparentMesh: 0
+--- !u!114 &1073970930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073970926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8799b96abcda4641839e89f83a28bb9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _divisionName: {fileID: 1650472038}
+  _divisionSpecialty: {fileID: 1290019375}
+  _divisionProfile: {fileID: 760909281}
 --- !u!224 &1079832179 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3317487173283160093, guid: dd14847ea2ef34741a0d7ca2c2fe942d, type: 3}
@@ -1884,7 +2553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ee73322669cc06498579766868d904f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _masterData: "{\"DivisionData\":[{\"id\":1,\"enName\":\"hokkaido\",\"name\":\"\u5317\u6D77\u9053\",\"surfaceSize\":7842075,\"population\":5140000,\"temperature\":10.2,\"urban\":179,\"village\":45,\"forestSize\":5313034,\"Hospitals\":638,\"College\":37},{\"id\":2,\"enName\":\"aomori\",\"name\":\"\u9752\u68EE\u770C\",\"surfaceSize\":964595,\"population\":1204000,\"temperature\":11.3,\"urban\":40,\"village\":10,\"forestSize\":613319,\"Hospitals\":110,\"College\":10},{\"id\":3,\"enName\":\"iwate\",\"name\":\"\u5CA9\u624B\u770C\",\"surfaceSize\":1527501,\"population\":1181000,\"temperature\":11.2,\"urban\":33,\"village\":14,\"forestSize\":1140190,\"Hospitals\":108,\"College\":6},{\"id\":4,\"enName\":\"miyagi\",\"name\":\"\u5BAE\u57CE\u770C\",\"surfaceSize\":728229,\"population\":2280000,\"temperature\":13.5,\"urban\":35,\"village\":19,\"forestSize\":403665,\"Hospitals\":150,\"College\":14},{\"id\":5,\"enName\":\"akita\",\"name\":\"\u79CB\u7530\u770C\",\"surfaceSize\":1163752,\"population\":930000,\"temperature\":12.6,\"urban\":25,\"village\":13,\"forestSize\":817659,\"Hospitals\":81,\"College\":7},{\"id\":6,\"enName\":\"yamagata\",\"name\":\"\u5C71\u5F62\u770C\",\"surfaceSize\":932315,\"population\":1041000,\"temperature\":12.6,\"urban\":35,\"village\":13,\"forestSize\":643605,\"Hospitals\":69,\"College\":6},{\"id\":7,\"enName\":\"fukushima\",\"name\":\"\u798F\u5CF6\u770C\",\"surfaceSize\":1378414,\"population\":1790000,\"temperature\":13.9,\"urban\":59,\"village\":13,\"forestSize\":937613,\"Hospitals\":157,\"College\":8},{\"id\":8,\"enName\":\"ibaraki\",\"name\":\"\u8328\u57CE\u770C\",\"surfaceSize\":609754,\"population\":2840000,\"temperature\":14.8,\"urban\":44,\"village\":32,\"forestSize\":197837,\"Hospitals\":215,\"College\":11},{\"id\":9,\"enName\":\"tochigi\",\"name\":\"\u6803\u6728\u770C\",\"surfaceSize\":640809,\"population\":1909000,\"temperature\":14.9,\"urban\":25,\"village\":14,\"forestSize\":338814,\"Hospitals\":119,\"College\":9},{\"id\":10,\"enName\":\"gumma\",\"name\":\"\u7FA4\u99AC\u770C\",\"surfaceSize\":636228,\"population\":1913000,\"temperature\":15.7,\"urban\":35,\"village\":12,\"forestSize\":407081,\"Hospitals\":142,\"College\":15},{\"id\":11,\"enName\":\"saitama\",\"name\":\"\u57FC\u7389\u770C\",\"surfaceSize\":379775,\"population\":7337000,\"temperature\":16,\"urban\":63,\"village\":50,\"forestSize\":119259,\"Hospitals\":367,\"College\":27},{\"id\":12,\"enName\":\"chiba\",\"name\":\"\u5343\u8449\u770C\",\"surfaceSize\":515674,\"population\":6266000,\"temperature\":16.7,\"urban\":54,\"village\":43,\"forestSize\":155129,\"Hospitals\":299,\"College\":27},{\"id\":13,\"enName\":\"tokyo\",\"name\":\"\u6771\u4EAC\u90FD\",\"surfaceSize\":219405,\"population\":14038000,\"temperature\":16.4,\"urban\":62,\"village\":49,\"forestSize\":76160,\"Hospitals\":681,\"College\":144},{\"id\":14,\"enName\":\"kanagawa\",\"name\":\"\u795E\u5948\u5DDD\u770C\",\"surfaceSize\":241632,\"population\":9232000,\"temperature\":16.7,\"urban\":33,\"village\":47,\"forestSize\":93442,\"Hospitals\":362,\"College\":31},{\"id\":15,\"enName\":\"niigata\",\"name\":\"\u65B0\u6F5F\u770C\",\"surfaceSize\":1258396,\"population\":2153000,\"temperature\":14.5,\"urban\":30,\"village\":28,\"forestSize\":798655,\"Hospitals\":138,\"College\":22},{\"id\":16,\"enName\":\"toyama\",\"name\":\"\u5BCC\u5C71\u770C\",\"surfaceSize\":424754,\"population\":1017000,\"temperature\":15.1,\"urban\":15,\"village\":10,\"forestSize\":240531,\"Hospitals\":116,\"College\":5},{\"id\":17,\"enName\":\"ishikawa\",\"name\":\"\u77F3\u5DDD\u770C\",\"surfaceSize\":418623,\"population\":1118000,\"temperature\":15.7,\"urban\":19,\"village\":11,\"forestSize\":277598,\"Hospitals\":121,\"College\":14},{\"id\":18,\"enName\":\"fukui\",\"name\":\"\u798F\u4E95\u770C\",\"surfaceSize\":419058,\"population\":753000,\"temperature\":15.4,\"urban\":17,\"village\":9,\"forestSize\":309847,\"Hospitals\":93,\"College\":6},{\"id\":19,\"enName\":\"yamanashi\",\"name\":\"\u5C71\u68A8\u770C\",\"surfaceSize\":446527,\"population\":802000,\"temperature\":15.7,\"urban\":27,\"village\":13,\"forestSize\":347359,\"Hospitals\":60,\"College\":7},{\"id\":20,\"enName\":\"nagano\",\"name\":\"\u9577\u91CE\u770C\",\"surfaceSize\":1356156,\"population\":2020000,\"temperature\":12.7,\"urban\":77,\"village\":19,\"forestSize\":1021559,\"Hospitals\":139,\"College\":11},{\"id\":21,\"enName\":\"gifu\",\"name\":\"\u5C90\u961C\u770C\",\"surfaceSize\":1062129,\"population\":1946000,\"temperature\":16.7,\"urban\":42,\"village\":21,\"forestSize\":838589,\"Hospitals\":115,\"College\":13},{\"id\":22,\"enName\":\"shizuoka\",\"name\":\"\u9759\u5CA1\u770C\",\"surfaceSize\":777702,\"population\":3582000,\"temperature\":17.4,\"urban\":35,\"village\":33,\"forestSize\":488352,\"Hospitals\":183,\"College\":14},{\"id\":23,\"enName\":\"aichi\",\"name\":\"\u611B\u77E5\u770C\",\"surfaceSize\":517324,\"population\":7495000,\"temperature\":16.9,\"urban\":54,\"village\":54,\"forestSize\":217531,\"Hospitals\":371,\"College\":52},{\"id\":24,\"enName\":\"mie\",\"name\":\"\u4E09\u91CD\u770C\",\"surfaceSize\":577448,\"population\":1742000,\"temperature\":16.9,\"urban\":29,\"village\":14,\"forestSize\":370850,\"Hospitals\":116,\"College\":7},{\"id\":25,\"enName\":\"shiga\",\"name\":\"\u6ECB\u8CC0\u770C\",\"surfaceSize\":401738,\"population\":1409000,\"temperature\":15.7,\"urban\":19,\"village\":13,\"forestSize\":203570,\"Hospitals\":60,\"College\":9},{\"id\":26,\"enName\":\"kyoto\",\"name\":\"\u4EAC\u90FD\u5E9C\",\"surfaceSize\":461220,\"population\":2550000,\"temperature\":16.8,\"urban\":26,\"village\":26,\"forestSize\":342114,\"Hospitals\":185,\"College\":34},{\"id\":27,\"enName\":\"osaka\",\"name\":\"\u5927\u962A\u5E9C\",\"surfaceSize\":190534,\"population\":8782000,\"temperature\":17.5,\"urban\":43,\"village\":64,\"forestSize\":56961,\"Hospitals\":577,\"College\":58},{\"id\":28,\"enName\":\"hyogo\",\"name\":\"\u5175\u5EAB\u770C\",\"surfaceSize\":840094,\"population\":5402000,\"temperature\":17.5,\"urban\":41,\"village\":38,\"forestSize\":562314,\"Hospitals\":346,\"College\":35},{\"id\":29,\"enName\":\"nara\",\"name\":\"\u5948\u826F\u770C\",\"surfaceSize\":369094,\"population\":1306000,\"temperature\":16.2,\"urban\":39,\"village\":12,\"forestSize\":283671,\"Hospitals\":73,\"College\":11},{\"id\":30,\"enName\":\"wakayama\",\"name\":\"\u548C\u6B4C\u5C71\u770C\",\"surfaceSize\":472469,\"population\":903000,\"temperature\":17.3,\"urban\":30,\"village\":9,\"forestSize\":360113,\"Hospitals\":92,\"College\":5},{\"id\":31,\"enName\":\"tottori\",\"name\":\"\u9CE5\u53D6\u770C\",\"surfaceSize\":350713,\"population\":544000,\"temperature\":15.7,\"urban\":19,\"village\":4,\"forestSize\":257355,\"Hospitals\":46,\"College\":3},{\"id\":32,\"enName\":\"shimane\",\"name\":\"\u5CF6\u6839\u770C\",\"surfaceSize\":670766,\"population\":658000,\"temperature\":15.8,\"urban\":19,\"village\":8,\"forestSize\":523260,\"Hospitals\":60,\"College\":2},{\"id\":33,\"enName\":\"okayama\",\"name\":\"\u5CA1\u5C71\u770C\",\"surfaceSize\":711477,\"population\":1862000,\"temperature\":16.4,\"urban\":27,\"village\":19,\"forestSize\":484721,\"Hospitals\":196,\"College\":18},{\"id\":34,\"enName\":\"hiroshima\",\"name\":\"\u5E83\u5CF6\u770C\",\"surfaceSize\":847900,\"population\":2760000,\"temperature\":17.1,\"urban\":23,\"village\":22,\"forestSize\":610059,\"Hospitals\":\"\",\"College\":21},{\"id\":35,\"enName\":\"yamaguchi\",\"name\":\"\u5C71\u53E3\u770C\",\"surfaceSize\":611250,\"population\":1313000,\"temperature\":16.3,\"urban\":19,\"village\":13,\"forestSize\":436534,\"Hospitals\":\"\",\"College\":10},{\"id\":36,\"enName\":\"tokushima\",\"name\":\"\u5FB3\u5CF6\u770C\",\"surfaceSize\":414699,\"population\":704000,\"temperature\":17.2,\"urban\":24,\"village\":8,\"forestSize\":312858,\"Hospitals\":\"\",\"College\":4},{\"id\":37,\"enName\":\"kagawa\",\"name\":\"\u9999\u5DDD\u770C\",\"surfaceSize\":187691,\"population\":934000,\"temperature\":17.3,\"urban\":17,\"village\":8,\"forestSize\":87077,\"Hospitals\":\"\",\"College\":4},{\"id\":38,\"enName\":\"ehime\",\"name\":\"\u611B\u5A9B\u770C\",\"surfaceSize\":567598,\"population\":1306000,\"temperature\":17.3,\"urban\":20,\"village\":11,\"forestSize\":399954,\"Hospitals\":\"\",\"College\":5},{\"id\":39,\"enName\":\"kochi\",\"name\":\"\u9AD8\u77E5\u770C\",\"surfaceSize\":710291,\"population\":676000,\"temperature\":17.7,\"urban\":34,\"village\":11,\"forestSize\":591873,\"Hospitals\":\"\",\"College\":5},{\"id\":40,\"enName\":\"fukuoka\",\"name\":\"\u798F\u5CA1\u770C\",\"surfaceSize\":498764,\"population\":5116000,\"temperature\":18,\"urban\":60,\"village\":43,\"forestSize\":221842,\"Hospitals\":\"\",\"College\":35},{\"id\":41,\"enName\":\"saga\",\"name\":\"\u4F50\u8CC0\u770C\",\"surfaceSize\":244067,\"population\":801000,\"temperature\":17.7,\"urban\":20,\"village\":10,\"forestSize\":110501,\"Hospitals\":\"\",\"College\":2},{\"id\":42,\"enName\":\"nagasaki\",\"name\":\"\u9577\u5D0E\u770C\",\"surfaceSize\":413099,\"population\":1283000,\"temperature\":17.8,\"urban\":21,\"village\":13,\"forestSize\":241657,\"Hospitals\":\"\",\"College\":8},{\"id\":43,\"enName\":\"kumamoto\",\"name\":\"\u718A\u672C\u770C\",\"surfaceSize\":740918,\"population\":1718000,\"temperature\":17.7,\"urban\":45,\"village\":19,\"forestSize\":457635,\"Hospitals\":\"\",\"College\":9},{\"id\":44,\"enName\":\"oita\",\"name\":\"\u5927\u5206\u770C\",\"surfaceSize\":634070,\"population\":1107000,\"temperature\":17.4,\"urban\":18,\"village\":14,\"forestSize\":448629,\"Hospitals\":\"\",\"College\":5},{\"id\":45,\"enName\":\"miyazaki\",\"name\":\"\u5BAE\u5D0E\u770C\",\"surfaceSize\":773424,\"population\":1052000,\"temperature\":18.2,\"urban\":26,\"village\":9,\"forestSize\":584379,\"Hospitals\":\"\",\"College\":7},{\"id\":46,\"enName\":\"kagoshima\",\"name\":\"\u9E7F\u5150\u5CF6\u770C\",\"surfaceSize\":918633,\"population\":1563000,\"temperature\":19.3,\"urban\":43,\"village\":19,\"forestSize\":584839,\"Hospitals\":\"\",\"College\":6},{\"id\":47,\"enName\":\"okinawa\",\"name\":\"\u6C96\u7E04\u770C\",\"surfaceSize\":228215,\"population\":1468000,\"temperature\":23.7,\"urban\":41,\"village\":11,\"forestSize\":106409,\"Hospitals\":\"\",\"College\":8}]}"
+  _masterData: "{\"DivisionData\":[{\"id\":1,\"enName\":\"hokkaido\",\"name\":\"\u5317\u6D77\u9053\",\"surfaceSize\":7842075,\"population\":5140000,\"temperature\":10.2,\"urban\":179,\"village\":45,\"forestSize\":5313034,\"Hospitals\":638,\"College\":37},{\"id\":2,\"enName\":\"aomori\",\"name\":\"\u9752\u68EE\u770C\",\"surfaceSize\":964595,\"population\":1204000,\"temperature\":11.3,\"urban\":40,\"village\":10,\"forestSize\":613319,\"Hospitals\":110,\"College\":10},{\"id\":3,\"enName\":\"iwate\",\"name\":\"\u5CA9\u624B\u770C\",\"surfaceSize\":1527501,\"population\":1181000,\"temperature\":11.2,\"urban\":33,\"village\":14,\"forestSize\":1140190,\"Hospitals\":108,\"College\":6},{\"id\":4,\"enName\":\"miyagi\",\"name\":\"\u5BAE\u57CE\u770C\",\"surfaceSize\":728229,\"population\":2280000,\"temperature\":13.5,\"urban\":35,\"village\":19,\"forestSize\":403665,\"Hospitals\":150,\"College\":14},{\"id\":5,\"enName\":\"akita\",\"name\":\"\u79CB\u7530\u770C\",\"surfaceSize\":1163752,\"population\":930000,\"temperature\":12.6,\"urban\":25,\"village\":13,\"forestSize\":817659,\"Hospitals\":81,\"College\":7},{\"id\":6,\"enName\":\"yamagata\",\"name\":\"\u5C71\u5F62\u770C\",\"surfaceSize\":932315,\"population\":1041000,\"temperature\":12.6,\"urban\":35,\"village\":13,\"forestSize\":643605,\"Hospitals\":69,\"College\":6},{\"id\":7,\"enName\":\"fukushima\",\"name\":\"\u798F\u5CF6\u770C\",\"surfaceSize\":1378414,\"population\":1790000,\"temperature\":13.9,\"urban\":59,\"village\":13,\"forestSize\":937613,\"Hospitals\":157,\"College\":8},{\"id\":8,\"enName\":\"ibaraki\",\"name\":\"\u8328\u57CE\u770C\",\"surfaceSize\":609754,\"population\":2840000,\"temperature\":14.8,\"urban\":44,\"village\":32,\"forestSize\":197837,\"Hospitals\":215,\"College\":11},{\"id\":9,\"enName\":\"tochigi\",\"name\":\"\u6803\u6728\u770C\",\"surfaceSize\":640809,\"population\":1909000,\"temperature\":14.9,\"urban\":25,\"village\":14,\"forestSize\":338814,\"Hospitals\":119,\"College\":9},{\"id\":10,\"enName\":\"gumma\",\"name\":\"\u7FA4\u99AC\u770C\",\"surfaceSize\":636228,\"population\":1913000,\"temperature\":15.7,\"urban\":35,\"village\":12,\"forestSize\":407081,\"Hospitals\":142,\"College\":15},{\"id\":11,\"enName\":\"saitama\",\"name\":\"\u57FC\u7389\u770C\",\"surfaceSize\":379775,\"population\":7337000,\"temperature\":16,\"urban\":63,\"village\":50,\"forestSize\":119259,\"Hospitals\":367,\"College\":27},{\"id\":12,\"enName\":\"chiba\",\"name\":\"\u5343\u8449\u770C\",\"surfaceSize\":515674,\"population\":6266000,\"temperature\":16.7,\"urban\":54,\"village\":43,\"forestSize\":155129,\"Hospitals\":299,\"College\":27},{\"id\":13,\"enName\":\"tokyo\",\"name\":\"\u6771\u4EAC\u90FD\",\"surfaceSize\":219405,\"population\":14038000,\"temperature\":16.4,\"urban\":62,\"village\":49,\"forestSize\":76160,\"Hospitals\":681,\"College\":144},{\"id\":14,\"enName\":\"kanagawa\",\"name\":\"\u795E\u5948\u5DDD\u770C\",\"surfaceSize\":241632,\"population\":9232000,\"temperature\":16.7,\"urban\":33,\"village\":47,\"forestSize\":93442,\"Hospitals\":362,\"College\":31},{\"id\":15,\"enName\":\"niigata\",\"name\":\"\u65B0\u6F5F\u770C\",\"surfaceSize\":1258396,\"population\":2153000,\"temperature\":14.5,\"urban\":30,\"village\":28,\"forestSize\":798655,\"Hospitals\":138,\"College\":22},{\"id\":16,\"enName\":\"toyama\",\"name\":\"\u5BCC\u5C71\u770C\",\"surfaceSize\":424754,\"population\":1017000,\"temperature\":15.1,\"urban\":15,\"village\":10,\"forestSize\":240531,\"Hospitals\":116,\"College\":5},{\"id\":17,\"enName\":\"ishikawa\",\"name\":\"\u77F3\u5DDD\u770C\",\"surfaceSize\":418623,\"population\":1118000,\"temperature\":15.7,\"urban\":19,\"village\":11,\"forestSize\":277598,\"Hospitals\":121,\"College\":14},{\"id\":18,\"enName\":\"fukui\",\"name\":\"\u798F\u4E95\u770C\",\"surfaceSize\":419058,\"population\":753000,\"temperature\":15.4,\"urban\":17,\"village\":9,\"forestSize\":309847,\"Hospitals\":93,\"College\":6},{\"id\":19,\"enName\":\"yamanashi\",\"name\":\"\u5C71\u68A8\u770C\",\"surfaceSize\":446527,\"population\":802000,\"temperature\":15.7,\"urban\":27,\"village\":13,\"forestSize\":347359,\"Hospitals\":60,\"College\":7},{\"id\":20,\"enName\":\"nagano\",\"name\":\"\u9577\u91CE\u770C\",\"surfaceSize\":1356156,\"population\":2020000,\"temperature\":12.7,\"urban\":77,\"village\":19,\"forestSize\":1021559,\"Hospitals\":139,\"College\":11},{\"id\":21,\"enName\":\"gifu\",\"name\":\"\u5C90\u961C\u770C\",\"surfaceSize\":1062129,\"population\":1946000,\"temperature\":16.7,\"urban\":42,\"village\":21,\"forestSize\":838589,\"Hospitals\":115,\"College\":13},{\"id\":22,\"enName\":\"shizuoka\",\"name\":\"\u9759\u5CA1\u770C\",\"surfaceSize\":777702,\"population\":3582000,\"temperature\":17.4,\"urban\":35,\"village\":33,\"forestSize\":488352,\"Hospitals\":183,\"College\":14},{\"id\":23,\"enName\":\"aichi\",\"name\":\"\u611B\u77E5\u770C\",\"surfaceSize\":517324,\"population\":7495000,\"temperature\":16.9,\"urban\":54,\"village\":54,\"forestSize\":217531,\"Hospitals\":371,\"College\":52},{\"id\":24,\"enName\":\"mie\",\"name\":\"\u4E09\u91CD\u770C\",\"surfaceSize\":577448,\"population\":1742000,\"temperature\":16.9,\"urban\":29,\"village\":14,\"forestSize\":370850,\"Hospitals\":116,\"College\":7},{\"id\":25,\"enName\":\"shiga\",\"name\":\"\u6ECB\u8CC0\u770C\",\"surfaceSize\":401738,\"population\":1409000,\"temperature\":15.7,\"urban\":19,\"village\":13,\"forestSize\":203570,\"Hospitals\":60,\"College\":9},{\"id\":26,\"enName\":\"kyoto\",\"name\":\"\u4EAC\u90FD\u5E9C\",\"surfaceSize\":461220,\"population\":2550000,\"temperature\":16.8,\"urban\":26,\"village\":26,\"forestSize\":342114,\"Hospitals\":185,\"College\":34},{\"id\":27,\"enName\":\"osaka\",\"name\":\"\u5927\u962A\u5E9C\",\"surfaceSize\":190534,\"population\":8782000,\"temperature\":17.5,\"urban\":43,\"village\":64,\"forestSize\":56961,\"Hospitals\":577,\"College\":58},{\"id\":28,\"enName\":\"hyogo\",\"name\":\"\u5175\u5EAB\u770C\",\"surfaceSize\":840094,\"population\":5402000,\"temperature\":17.5,\"urban\":41,\"village\":38,\"forestSize\":562314,\"Hospitals\":346,\"College\":35},{\"id\":29,\"enName\":\"nara\",\"name\":\"\u5948\u826F\u770C\",\"surfaceSize\":369094,\"population\":1306000,\"temperature\":16.2,\"urban\":39,\"village\":12,\"forestSize\":283671,\"Hospitals\":73,\"College\":11},{\"id\":30,\"enName\":\"wakayama\",\"name\":\"\u548C\u6B4C\u5C71\u770C\",\"surfaceSize\":472469,\"population\":903000,\"temperature\":17.3,\"urban\":30,\"village\":9,\"forestSize\":360113,\"Hospitals\":92,\"College\":5},{\"id\":31,\"enName\":\"tottori\",\"name\":\"\u9CE5\u53D6\u770C\",\"surfaceSize\":350713,\"population\":544000,\"temperature\":15.7,\"urban\":19,\"village\":4,\"forestSize\":257355,\"Hospitals\":46,\"College\":3},{\"id\":32,\"enName\":\"shimane\",\"name\":\"\u5CF6\u6839\u770C\",\"surfaceSize\":670766,\"population\":658000,\"temperature\":15.8,\"urban\":19,\"village\":8,\"forestSize\":523260,\"Hospitals\":60,\"College\":2},{\"id\":33,\"enName\":\"okayama\",\"name\":\"\u5CA1\u5C71\u770C\",\"surfaceSize\":711477,\"population\":1862000,\"temperature\":16.4,\"urban\":27,\"village\":19,\"forestSize\":484721,\"Hospitals\":196,\"College\":18},{\"id\":34,\"enName\":\"hiroshima\",\"name\":\"\u5E83\u5CF6\u770C\",\"surfaceSize\":847900,\"population\":2760000,\"temperature\":17.1,\"urban\":23,\"village\":22,\"forestSize\":610059,\"Hospitals\":\"\",\"College\":21},{\"id\":35,\"enName\":\"yamaguchi\",\"name\":\"\u5C71\u53E3\u770C\",\"surfaceSize\":611250,\"population\":1313000,\"temperature\":16.3,\"urban\":19,\"village\":13,\"forestSize\":436534,\"Hospitals\":\"\",\"College\":10},{\"id\":36,\"enName\":\"tokushima\",\"name\":\"\u5FB3\u5CF6\u770C\",\"surfaceSize\":414699,\"population\":704000,\"temperature\":17.2,\"urban\":24,\"village\":8,\"forestSize\":312858,\"Hospitals\":\"\",\"College\":4},{\"id\":37,\"enName\":\"kagawa\",\"name\":\"\u9999\u5DDD\u770C\",\"surfaceSize\":187691,\"population\":934000,\"temperature\":17.3,\"urban\":17,\"village\":8,\"forestSize\":87077,\"Hospitals\":\"\",\"College\":4},{\"id\":38,\"enName\":\"ehime\",\"name\":\"\u611B\u5A9B\u770C\",\"surfaceSize\":567598,\"population\":1306000,\"temperature\":17.3,\"urban\":20,\"village\":11,\"forestSize\":399954,\"Hospitals\":\"\",\"College\":5},{\"id\":39,\"enName\":\"kochi\",\"name\":\"\u9AD8\u77E5\u770C\",\"surfaceSize\":710291,\"population\":676000,\"temperature\":17.7,\"urban\":34,\"village\":11,\"forestSize\":591873,\"Hospitals\":\"\",\"College\":5},{\"id\":40,\"enName\":\"fukuoka\",\"name\":\"\u798F\u5CA1\u770C\",\"surfaceSize\":498764,\"population\":5116000,\"temperature\":18,\"urban\":60,\"village\":43,\"forestSize\":221842,\"Hospitals\":\"\",\"College\":35},{\"id\":41,\"enName\":\"shiga\",\"name\":\"\u4F50\u8CC0\u770C\",\"surfaceSize\":244067,\"population\":801000,\"temperature\":17.7,\"urban\":20,\"village\":10,\"forestSize\":110501,\"Hospitals\":\"\",\"College\":2},{\"id\":42,\"enName\":\"nagasaki\",\"name\":\"\u9577\u5D0E\u770C\",\"surfaceSize\":413099,\"population\":1283000,\"temperature\":17.8,\"urban\":21,\"village\":13,\"forestSize\":241657,\"Hospitals\":\"\",\"College\":8},{\"id\":43,\"enName\":\"kumamoto\",\"name\":\"\u718A\u672C\u770C\",\"surfaceSize\":740918,\"population\":1718000,\"temperature\":17.7,\"urban\":45,\"village\":19,\"forestSize\":457635,\"Hospitals\":\"\",\"College\":9},{\"id\":44,\"enName\":\"oita\",\"name\":\"\u5927\u5206\u770C\",\"surfaceSize\":634070,\"population\":1107000,\"temperature\":17.4,\"urban\":18,\"village\":14,\"forestSize\":448629,\"Hospitals\":\"\",\"College\":5},{\"id\":45,\"enName\":\"miyazaki\",\"name\":\"\u5BAE\u5D0E\u770C\",\"surfaceSize\":773424,\"population\":1052000,\"temperature\":18.2,\"urban\":26,\"village\":9,\"forestSize\":584379,\"Hospitals\":\"\",\"College\":7},{\"id\":46,\"enName\":\"kagoshima\",\"name\":\"\u9E7F\u5150\u5CF6\u770C\",\"surfaceSize\":918633,\"population\":1563000,\"temperature\":19.3,\"urban\":43,\"village\":19,\"forestSize\":584839,\"Hospitals\":\"\",\"College\":6},{\"id\":47,\"enName\":\"okinawa\",\"name\":\"\u6C96\u7E04\u770C\",\"surfaceSize\":228215,\"population\":1468000,\"temperature\":23.7,\"urban\":41,\"village\":11,\"forestSize\":106409,\"Hospitals\":\"\",\"College\":8}],\"DivisionProfile\":[{\"id\":1,\"name\":\"\u5317\u6D77\u9053\",\"specialty\":\"\u30B8\u30E3\u30AC\u30A4\u30E2\",\"profile\":\"\u592A\u5E73\u6D0B\u3001\u30AA\u30DB\u30FC\u30C4\u30AF\u6D77\u3001\u65E5\u672C\u6D77\u306E3\u3064\u306E\u6D77\u306B\u56F2\u307E\u308C\u3066\u3044\u308B\u3002\"},{\"id\":2,\"name\":\"\u9752\u68EE\u770C\",\"specialty\":\"\u308A\u3093\u3054\",\"profile\":\"\u306D\u3076\u305F\u796D\u308A\u3084\u7F8E\u3057\u3044\u6D77\u5CB8\u7DDA\u3001\u308A\u3093\u3054\u306E\u7523\u5730\u3002\"},{\"id\":3,\"name\":\"\u5CA9\u624B\u770C\",\"specialty\":\"\u308F\u3093\u3053\u305D\u3070\",\"profile\":\"\u4E16\u754C\u907A\u7523\u306E\u5E73\u6CC9\u3084\u6E29\u6CC9\u5730\u3001\u308F\u3093\u3053\u305D\u3070\u304C\u6709\u540D\u3002\"},{\"id\":4,\"name\":\"\u5BAE\u57CE\u770C\",\"specialty\":\"\u3053\u3051\u3057\",\"profile\":\"\u677E\u5CF6\u3084\u4ED9\u53F0\u4E03\u5915\u796D\u308A\u3001\u6B74\u53F2\u7684\u540D\u6240\u3068\u6E29\u6CC9\u304C\u8C4A\u5BCC\u3002\"},{\"id\":5,\"name\":\"\u79CB\u7530\u770C\",\"specialty\":\"\u304D\u308A\u305F\u3093\u307D\u934B\",\"profile\":\"\u96EA\u666F\u8272\u3084\u6E29\u6CC9\u3001\u6A2A\u624B\u306E\u304B\u307E\u304F\u3089\u3001\u4F1D\u7D71\u6587\u5316\u304C\u9B45\u529B\u3002\"},{\"id\":6,\"name\":\"\u5C71\u5F62\u770C\",\"specialty\":\"\u3055\u304F\u3089\u3093\u307C\",\"profile\":\"\u8535\u738B\u6E29\u6CC9\u3084\u3055\u304F\u3089\u3093\u307C\u306E\u7523\u5730\u3001\u81EA\u7136\u7F8E\u304C\u7279\u5FB4\u3002\"},{\"id\":7,\"name\":\"\u798F\u5CF6\u770C\",\"specialty\":\"\u559C\u591A\u65B9\u30E9\u30FC\u30E1\u30F3\",\"profile\":\"\u4F1A\u6D25\u82E5\u677E\u3084\u6E29\u6CC9\u5730\u3001\u8C4A\u304B\u306A\u81EA\u7136\u3068\u6B74\u53F2\u306E\u753A\u3002\"},{\"id\":8,\"name\":\"\u8328\u57CE\u770C\",\"specialty\":\"\u7D0D\u8C46\",\"profile\":\"\u6C34\u6238\u5055\u697D\u5712\u3084\u7D0D\u8C46\u3001\u89B3\u5149\u5730\u304C\u591A\u304F\u81EA\u7136\u3082\u8C4A\u304B\u3002\"},{\"id\":9,\"name\":\"\u6803\u6728\u770C\",\"specialty\":\"\u304B\u3093\u3074\u3087\u3046\",\"profile\":\"\u65E5\u5149\u6771\u7167\u5BAE\u3084\u9B3C\u6012\u5DDD\u6E29\u6CC9\u3001\u81EA\u7136\u8C4A\u304B\u306A\u89B3\u5149\u5730\u3002\"},{\"id\":10,\"name\":\"\u7FA4\u99AC\u770C\",\"specialty\":\"\u3053\u3093\u306B\u3083\u304F\",\"profile\":\"\u8349\u6D25\u6E29\u6CC9\u3084\u4F0A\u9999\u4FDD\u6E29\u6CC9\u3001\u4E16\u754C\u907A\u7523\u306E\u5BCC\u5CA1\u88FD\u7CF8\u5834\u3002\"},{\"id\":11,\"name\":\"\u57FC\u7389\u770C\",\"specialty\":\"\u3072\u306A\u4EBA\u5F62\",\"profile\":\"\u5DDD\u8D8A\u306E\u6B74\u53F2\u7684\u8857\u4E26\u307F\u3084\u79E9\u7236\u306E\u81EA\u7136\u3001\u9244\u9053\u535A\u7269\u9928\u3002\"},{\"id\":12,\"name\":\"\u5343\u8449\u770C\",\"specialty\":\"\u3057\u3087\u3046\u3086\",\"profile\":\"\u6771\u4EAC\u30C7\u30A3\u30BA\u30CB\u30FC\u30E9\u30F3\u30C9\u3084\u4E5D\u5341\u4E5D\u91CC\u6D5C\u3001\u8FB2\u7523\u7269\u304C\u8C4A\u5BCC\u3002\"},{\"id\":13,\"name\":\"\u6771\u4EAC\u90FD\",\"specialty\":\"\u66F8\u7C4D\",\"profile\":\"\u6771\u4EAC\u30BF\u30EF\u30FC\u3084\u6D45\u8349\u5BFA\u3001\u90FD\u5E02\u578B\u89B3\u5149\u3068\u30B0\u30EB\u30E1\u304C\u697D\u3057\u3081\u308B\u3002\"},{\"id\":14,\"name\":\"\u795E\u5948\u5DDD\u770C\",\"specialty\":\"\u304B\u307E\u307C\u3053\",\"profile\":\"\u938C\u5009\u306E\u5BFA\u9662\u3084\u7BB1\u6839\u306E\u6E29\u6CC9\u3001\u6A2A\u6D5C\u306E\u6E2F\u753A\u304C\u9B45\u529B\u3002\"},{\"id\":15,\"name\":\"\u65B0\u6F5F\u770C\",\"specialty\":\"\u5C0F\u5343\u8C37\u3061\u3062\u307F\",\"profile\":\"\u8D8A\u5F8C\u6E6F\u6CA2\u3084\u4F50\u6E21\u5CF6\u3001\u7C73\u3084\u65E5\u672C\u9152\u304C\u7279\u7523\u3002\"},{\"id\":16,\"name\":\"\u5BCC\u5C71\u770C\",\"specialty\":\"\u30C1\u30E5\u30FC\u30EA\u30C3\u30D7\",\"profile\":\"\u7ACB\u5C71\u3084\u9ED2\u90E8\u30C0\u30E0\u3001\u6D77\u7523\u7269\u304C\u8C4A\u5BCC\u306A\u770C\u3002\"},{\"id\":17,\"name\":\"\u77F3\u5DDD\u770C\",\"specialty\":\"\u8F2A\u5CF6\u306C\u308A\",\"profile\":\"\u91D1\u6CA2\u306E\u517C\u516D\u5712\u3084\u80FD\u767B\u534A\u5CF6\u3001\u4F1D\u7D71\u7684\u306A\u5DE5\u82B8\u304C\u76DB\u3093\u3002\"},{\"id\":18,\"name\":\"\u798F\u4E95\u770C\",\"specialty\":\"\u8D8A\u524D\u304B\u306B\",\"profile\":\"\u6771\u5C0B\u574A\u3084\u6050\u7ADC\u535A\u7269\u9928\u3001\u6B74\u53F2\u3068\u81EA\u7136\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u53D6\u308C\u305F\u770C\u3002\"},{\"id\":19,\"name\":\"\u5C71\u68A8\u770C\",\"specialty\":\"\u3076\u3069\u3046\",\"profile\":\"\u5BCC\u58EB\u5C71\u3084\u6607\u4ED9\u5CE1\u3001\u30EF\u30A4\u30F3\u3084\u30D5\u30EB\u30FC\u30C4\u304C\u7279\u7523\u3002\"},{\"id\":20,\"name\":\"\u9577\u91CE\u770C\",\"specialty\":\"\u4FE1\u5DDE\u307F\u305D\",\"profile\":\"\u4E0A\u9AD8\u5730\u3084\u677E\u672C\u57CE\u3001\u56DB\u5B63\u6298\u3005\u306E\u7F8E\u3057\u3044\u98A8\u666F\u304C\u9B45\u529B\u3002\"},{\"id\":21,\"name\":\"\u5C90\u961C\u770C\",\"specialty\":\"\u548C\u7D19\",\"profile\":\"\u767D\u5DDD\u90F7\u306E\u5408\u638C\u9020\u308A\u3084\u98DB\u9A28\u9AD8\u5C71\u3001\u81EA\u7136\u8C4A\u304B\u306A\u89B3\u5149\u5730\u3002\"},{\"id\":22,\"name\":\"\u9759\u5CA1\u770C\",\"specialty\":\"\u304A\u8336\",\"profile\":\"\u5BCC\u58EB\u5C71\u3084\u4F0A\u8C46\u534A\u5CF6\u3001\u6E29\u6CC9\u3084\u8336\u304C\u7279\u7523\u3002\"},{\"id\":23,\"name\":\"\u611B\u77E5\u770C\",\"specialty\":\"\u702C\u6238\u713C\",\"profile\":\"\u540D\u53E4\u5C4B\u57CE\u3084\u71B1\u7530\u795E\u5BAE\u3001\u540D\u53E4\u5C4B\u30E1\u30B7\u304C\u8C4A\u5BCC\u3002\"},{\"id\":24,\"name\":\"\u4E09\u91CD\u770C\",\"specialty\":\"\u677E\u5742\u725B\",\"profile\":\"\u4F0A\u52E2\u795E\u5BAE\u3084\u5FD7\u6469\u30B9\u30DA\u30A4\u30F3\u6751\u3001\u9234\u9E7F\u30B5\u30FC\u30AD\u30C3\u30C8\u3002\"},{\"id\":25,\"name\":\"\u6ECB\u8CC0\u770C\",\"specialty\":\"\u4FE1\u697D\u713C\",\"profile\":\"\u7435\u7436\u6E56\u3084\u5927\u6D25\u3001\u8FD1\u6C5F\u5927\u6D25\u5E02\u306E\u6B74\u53F2\u7684\u753A\u4E26\u307F\u3002\"},{\"id\":26,\"name\":\"\u4EAC\u90FD\u5E9C\",\"specialty\":\"\u897F\u9663\u7E54\",\"profile\":\"\u6E05\u6C34\u5BFA\u3084\u91D1\u95A3\u5BFA\u3001\u4F1D\u7D71\u7684\u306A\u6587\u5316\u3068\u89B3\u5149\u304C\u8C4A\u5BCC\u3002\"},{\"id\":27,\"name\":\"\u5927\u962A\u5E9C\",\"specialty\":\"\u305F\u3053\u713C\u304D\",\"profile\":\"\u5927\u962A\u57CE\u3084\u9053\u9813\u5800\u3001\u98DF\u6587\u5316\uFF08\u304A\u597D\u307F\u713C\u304D\u30FB\u305F\u3053\u713C\u304D\uFF09\u3002\"},{\"id\":28,\"name\":\"\u5175\u5EAB\u770C\",\"specialty\":\"\u305D\u308D\u3070\u3093\",\"profile\":\"\u795E\u6238\u306E\u6E2F\u753A\u3084\u59EB\u8DEF\u57CE\u3001\u6E29\u6CC9\u5730\u304C\u8C4A\u5BCC\u3002\"},{\"id\":29,\"name\":\"\u5948\u826F\u770C\",\"specialty\":\"\u7B46\",\"profile\":\"\u5948\u826F\u516C\u5712\u3084\u6771\u5927\u5BFA\u3001\u5927\u4ECF\u3001\u5409\u91CE\u5C71\u306E\u81EA\u7136\u3002\"},{\"id\":30,\"name\":\"\u548C\u6B4C\u5C71\u770C\",\"specialty\":\"\u3046\u3081\",\"profile\":\"\u767D\u6D5C\u6E29\u6CC9\u3084\u9AD8\u91CE\u5C71\u3001\u81EA\u7136\u3068\u6B74\u53F2\u304C\u8ABF\u548C\u3057\u305F\u5834\u6240\u3002\"},{\"id\":31,\"name\":\"\u9CE5\u53D6\u770C\",\"specialty\":\"\u4E8C\u91CD\u4E16\u7D00\u306A\u3057\",\"profile\":\"\u9CE5\u53D6\u7802\u4E18\u3084\u5927\u5C71\u3001\u89B3\u5149\u5730\u3068\u81EA\u7136\u666F\u89B3\u304C\u8C4A\u5BCC\u3002\"},{\"id\":32,\"name\":\"\u5CF6\u6839\u770C\",\"specialty\":\"\u3057\u3058\u307F\",\"profile\":\"\u51FA\u96F2\u5927\u793E\u3084\u677E\u6C5F\u57CE\u3001\u96A0\u5C90\u8AF8\u5CF6\u306A\u3069\u6B74\u53F2\u7684\u540D\u6240\u3002\"},{\"id\":33,\"name\":\"\u5CA1\u5C71\u770C\",\"specialty\":\"\u5099\u524D\u713C\",\"profile\":\"\u5009\u6577\u306E\u7F8E\u89B3\u5730\u533A\u3084\u5F8C\u697D\u5712\u3001\u6843\u592A\u90CE\u4F1D\u8AAC\u3002\"},{\"id\":34,\"name\":\"\u5E83\u5CF6\u770C\",\"specialty\":\"\u4E0B\u8A18\",\"profile\":\"\u5BAE\u5CF6\u3084\u539F\u7206\u30C9\u30FC\u30E0\u3001\u5E83\u5CF6\u98A8\u304A\u597D\u307F\u713C\u304D\u304C\u6709\u540D\u3002\"},{\"id\":35,\"name\":\"\u5C71\u53E3\u770C\",\"specialty\":\"\u3075\u3050\",\"profile\":\"\u89D2\u5CF6\u3084\u9326\u5E2F\u6A4B\u3001\u6B74\u53F2\u7684\u306A\u753A\u4E26\u307F\u3068\u81EA\u7136\u304C\u8ABF\u548C\u3002\"},{\"id\":36,\"name\":\"\u5FB3\u5CF6\u770C\",\"specialty\":\"\u3059\u3060\u3061\",\"profile\":\"\u963F\u6CE2\u8E0A\u308A\u3084\u9CF4\u9580\u306E\u6E26\u6F6E\u3001\u5263\u5C71\u306E\u81EA\u7136\u666F\u89B3\u3002\"},{\"id\":37,\"name\":\"\u9999\u5DDD\u770C\",\"specialty\":\"\u8B83\u5C90\u3046\u3069\u3093\",\"profile\":\"\u8B83\u5C90\u3046\u3069\u3093\u3084\u9AD8\u677E\u3001\u4E38\u4E80\u57CE\u3001\u7434\u5E73\u306E\u89B3\u5149\u540D\u6240\u3002\"},{\"id\":38,\"name\":\"\u611B\u5A9B\u770C\",\"specialty\":\"\u3044\u3088\u304B\u3093\",\"profile\":\"\u9053\u5F8C\u6E29\u6CC9\u3084\u677E\u5C71\u57CE\u3001\u3057\u307E\u306A\u307F\u6D77\u9053\u304C\u6709\u540D\u3002\"},{\"id\":39,\"name\":\"\u9AD8\u77E5\u770C\",\"specialty\":\"\u304B\u3064\u304A\u3076\u3057\",\"profile\":\"\u3072\u308D\u3081\u5E02\u5834\u3084\u6842\u6D5C\u3001\u9AD8\u77E5\u57CE\u3001\u56DB\u4E07\u5341\u5DDD\u304C\u89B3\u5149\u540D\u6240\u3002\"},{\"id\":40,\"name\":\"\u798F\u5CA1\u770C\",\"specialty\":\"\u535A\u591A\u4EBA\u5F62\",\"profile\":\"\u535A\u591A\u3084\u592A\u5BB0\u5E9C\u5929\u6E80\u5BAE\u3001\u535A\u591A\u30E9\u30FC\u30E1\u30F3\u304C\u6709\u540D\u3002\"},{\"id\":41,\"name\":\"\u4F50\u8CC0\u770C\",\"specialty\":\"\u4F0A\u4E07\u91CC\u713C\",\"profile\":\"\u6709\u7530\u713C\u3084\u5409\u91CE\u30F6\u91CC\u907A\u8DE1\u3001\u5B09\u91CE\u6E29\u6CC9\u304C\u9B45\u529B\u3002\"},{\"id\":42,\"name\":\"\u9577\u5D0E\u770C\",\"specialty\":\"\u30AB\u30B9\u30C6\u30E9\",\"profile\":\"\u5E73\u548C\u516C\u5712\u3084\u30B0\u30E9\u30D0\u30FC\u5712\u3001\u9577\u5D0E\u3061\u3083\u3093\u307D\u3093\u304C\u6709\u540D\u3002\"},{\"id\":43,\"name\":\"\u718A\u672C\u770C\",\"specialty\":\"\u30C8\u30DE\u30C8\",\"profile\":\"\u718A\u672C\u57CE\u3084\u963F\u8607\u5C71\u3001\u6E29\u6CC9\u5730\u304C\u70B9\u5728\u3002\"},{\"id\":44,\"name\":\"\u5927\u5206\u770C\",\"specialty\":\"\u7AF9\u7D30\u5DE5\",\"profile\":\"\u5225\u5E9C\u6E29\u6CC9\u3084\u6E6F\u5E03\u9662\u6E29\u6CC9\u3001\u81EA\u7136\u3068\u6E29\u6CC9\u304C\u8C4A\u304B\u3002\"},{\"id\":45,\"name\":\"\u5BAE\u5D0E\u770C\",\"specialty\":\"\u30D4\u30FC\u30DE\u30F3\",\"profile\":\"\u9AD8\u5343\u7A42\u5CE1\u3084\u9752\u5CF6\u795E\u793E\u3001\u65E5\u5411\u590F\u304C\u7279\u7523\u3002\"},{\"id\":46,\"name\":\"\u9E7F\u5150\u5CF6\u770C\",\"specialty\":\"\u3055\u3064\u307E\u63DA\u3052\",\"profile\":\"\u685C\u5CF6\u3084\u5C4B\u4E45\u5CF6\u3001\u6E29\u6696\u306A\u6C17\u5019\u3068\u6B74\u53F2\u7684\u540D\u6240\u3002\"},{\"id\":47,\"name\":\"\u6C96\u7E04\u770C\",\"specialty\":\"\u30D1\u30A4\u30CA\u30C3\u30D7\u30EB\",\"profile\":\"\u9996\u91CC\u57CE\u3084\u7F8E\u3089\u6D77\u6C34\u65CF\u9928\u3001\u4F1D\u7D71\u7684\u306A\u6587\u5316\u304C\u9B45\u529B\u3002\"}]}"
 --- !u!4 &1208150711
 Transform:
   m_ObjectHideFlags: 0
@@ -2034,6 +2703,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277022328}
   m_CullTransparentMesh: 1
+--- !u!1 &1290019373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1290019374}
+  - component: {fileID: 1290019376}
+  - component: {fileID: 1290019375}
+  m_Layer: 5
+  m_Name: specialtyValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1290019374
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290019373}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1421500741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: -90}
+  m_SizeDelta: {x: 400, y: 160}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1290019375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290019373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u30C6\u30B9\u30C8\u7279\u7523\u7269"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1290019376
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290019373}
+  m_CullTransparentMesh: 0
 --- !u!1 &1301783617
 GameObject:
   m_ObjectHideFlags: 0
@@ -2218,6 +3021,43 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1343283156}
   m_CullTransparentMesh: 1
+--- !u!1 &1421500740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1421500741}
+  m_Layer: 5
+  m_Name: specialty
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1421500741
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421500740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 891906588}
+  - {fileID: 1290019374}
+  m_Father: {fileID: 1073970927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -267, y: -3}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1453200690
 GameObject:
   m_ObjectHideFlags: 0
@@ -2665,6 +3505,140 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8718ef177d464d5f99f6d0f320573bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1650472036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650472037}
+  - component: {fileID: 1650472039}
+  - component: {fileID: 1650472038}
+  m_Layer: 5
+  m_Name: nameValue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1650472037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650472036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1904168218}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -40}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1650472038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650472036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u30C6\u30B9\u30C8\u770C"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 50
+  m_fontSizeBase: 50
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1650472039
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650472036}
+  m_CullTransparentMesh: 0
 --- !u!1 &1713315813
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,6 +3691,7 @@ MonoBehaviour:
   _enemyCardView: {fileID: 1301783619}
   _battleResultView: {fileID: 1453200694}
   _gameEndView: {fileID: 1103294395}
+  _informationPanelView: {fileID: 1073970930}
   _scoreView: {fileID: 113688893}
   _themeText: {fileID: 95246859}
 --- !u!114 &1713315816
@@ -3312,6 +4287,177 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1839936375}
   m_CullTransparentMesh: 1
+--- !u!1 &1904168217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1904168218}
+  m_Layer: 5
+  m_Name: name
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1904168218
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1904168217}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 267949904}
+  - {fileID: 1650472037}
+  m_Father: {fileID: 1073970927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -267, y: 165}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1992864307
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1992864308}
+  - component: {fileID: 1992864310}
+  - component: {fileID: 1992864309}
+  m_Layer: 5
+  m_Name: Title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1992864308
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992864307}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1073970927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -60}
+  m_SizeDelta: {x: 200, y: 72}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1992864309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992864307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "\u8A73\u7D30"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_sharedMaterial: {fileID: 3593318242743413944, guid: 13f777f8d3e8a2548a2c04bf16ab08db, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 1
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1992864310
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1992864307}
+  m_CullTransparentMesh: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

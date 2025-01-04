@@ -20,20 +20,16 @@ public class IngameModel
     private List<DivisionData> _deck = new List<DivisionData>();
     private List<DivisionData> _playerHnad = new List<DivisionData>();
     public List<DivisionData> deck { get { return _deck; } }
-    public List<DivisionData> playerDeck { get { return _playerHnad; } }
+    public List<DivisionData> playerHand { get { return _playerHnad; } }
 
     public DivisionData PlayerSelectCard { get => _playerSelectCard; }
-    public string WinnerName { get => _winnerName; }
+    public bool IsCollectAnswer { get => _isCollectAnswer; }
 
     private DivisionData _playerSelectCard;
-    private DivisionData _enemySelectCard;
-    public DivisionData EnemySelectCardData { get => _enemySelectCard; }
-    private String _winnerName;
+    private bool _isCollectAnswer;
 
     private int _playerScore = 0;
-    private int _enemyScore = 0;
     public int CurrentPlayerScore { get => _playerScore; }
-    public int CurrentEnemyScore { get => _enemyScore; }
 
     public void Init()
     {
@@ -48,9 +44,6 @@ public class IngameModel
 
         State.Where(state => state == StateType.Draw)
             .Subscribe(_ => PlayerDraw());
-
-        State.Where(state => state == StateType.EnemyCardSelect)
-            .Subscribe(_ => EnemySelectCard());
 
         State.Where(state => state == StateType.Battle)
             .Subscribe(_ => Battle().Forget());
@@ -99,15 +92,7 @@ public class IngameModel
     public void SetPlayerSelectCard(DivisionData data)
     {
         _playerSelectCard = data;
-        _state.Value = StateType.EnemyCardSelect;
-    }
-
-    public void EnemySelectCard()
-    {
-        _enemySelectCard = _deck[UnityEngine.Random.Range(0, _deck.Count)];
         _playerHnad.Remove(_playerSelectCard);
-        _deck.Remove(_enemySelectCard);
-        UnityEngine.Debug.Log($"EnemyCard is {_enemySelectCard.name}");
         _state.Value = StateType.Battle;
     }
 
@@ -116,26 +101,21 @@ public class IngameModel
 
         //TODO:????????????????????????
         UnityEngine.Debug.Log($"current theme is {CurrentTheme}");
-        UnityEngine.Debug.Log($"Player : {ValueByData(_playerSelectCard)}, enemy : {ValueByData(_enemySelectCard)}");
-        if (ValueByData(_playerSelectCard) > ValueByData(_enemySelectCard))
+        UnityEngine.Debug.Log($"player hand count  is {_playerHnad.Count}");
+        UnityEngine.Debug.Log($"Player : {ValueByData(_playerSelectCard)}, enemy : {_playerHnad.Max(v => ValueByData(v))}");
+        if (ValueByData(_playerSelectCard) >= _playerHnad.Max(v => ValueByData(v)))
         {
-            _winnerName = "Player";
+            _isCollectAnswer =true;
             _playerScore++;
-            UnityEngine.Debug.Log("PlayerWin");
-        }
-        else if (ValueByData(_playerSelectCard) < ValueByData(_enemySelectCard))
-        {
-            _winnerName = "Enemy";
-            _enemyScore++;
-            UnityEngine.Debug.Log("EnemyWin");
+            UnityEngine.Debug.Log("Player answer is collect");
         }
         else
         {
-            _winnerName = "None";
-            UnityEngine.Debug.Log("Draw");
+            _isCollectAnswer = false;
+            UnityEngine.Debug.Log("Enemy answer is failed");
         }
 
-        await UniTask.Delay(TimeSpan.FromSeconds(1));
+        await UniTask.Delay(TimeSpan.FromSeconds(0.5f));
 
         if (deck.Count < 2)
         {
@@ -144,7 +124,7 @@ public class IngameModel
         }
         else
         {
-            await UniTask.Delay(TimeSpan.FromSeconds(2));
+            await UniTask.Delay(TimeSpan.FromSeconds(1));
             UpdateThemeValue();
             _state.Value = StateType.Draw;
         }

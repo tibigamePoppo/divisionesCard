@@ -14,7 +14,6 @@ public class IngameView : MonoBehaviour
     [SerializeField] private Button _readyButton;
     [SerializeField] private CardView _cardPrefab;
     [SerializeField] private SelectCardView _selectCardView;
-    [SerializeField] private SelectCardView _enemyCardView;
     [SerializeField] private BattleResultView _battleResultView;
     [SerializeField] private GameEndView _gameEndView;
     [SerializeField] private InformationPanelView _informationPanelView;
@@ -30,7 +29,6 @@ public class IngameView : MonoBehaviour
     public void Init()
     {
         _selectCardView.Init();
-        _enemyCardView.Init();
         _gameEndView.Init();
         _battleResultView.Init();
         _informationPanelView.Init();
@@ -107,23 +105,14 @@ public class IngameView : MonoBehaviour
         }
     }
 
-    public void EnemyCardSet(DivisionData data)
-    {
-        _enemyCardView.ShowSelectCard(data,_theme);
-    }
-
-    public void EnemyCardHide()
-    {
-        _enemyCardView.HideSelectCard();
-    }
     public void HidePreviewCard()
     {
         _selectCardView.HideSelectCard();
     }
 
-    public void ShowBattleResultPanel(DivisionData player,DivisionData enemy,string winnerName)
+    public void ShowBattleResultPanel(bool isCollectAnswer)
     {
-        _battleResultView.ShowBattleResultPanel(player, enemy, winnerName, _theme);
+        _battleResultView.ShowBattleResultPanel(isCollectAnswer);
     }
 
     public void HideBattleResultPanel()
@@ -143,9 +132,9 @@ public class IngameView : MonoBehaviour
         }
     }
 
-    public void UpdateScore(string user1, int user1point, string user2, int user2point)
+    public void UpdateScore(string user, int userPoint)
     {
-        _scoreView.UpdateScoreText(user1, user1point, user2, user2point);
+        _scoreView.UpdateScoreText(user, userPoint);
     }
 
     public void SetThemeText(DivisionProfileType text)

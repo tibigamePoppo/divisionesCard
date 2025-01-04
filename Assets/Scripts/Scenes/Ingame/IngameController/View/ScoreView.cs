@@ -3,19 +3,16 @@ using TMPro;
 
 public class ScoreView : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI _user1Score;
-    [SerializeField] private TextMeshProUGUI _user2Score;
+    [SerializeField] private TextMeshProUGUI _userScore;
 
     public void Init()
     {
-        _user1Score.text = Text("Player", 0);
-        _user2Score.text = Text("Enemy", 0);
+        _userScore.text = Text("Player", 0);
     }
 
-    public void UpdateScoreText(string user1,int user1point, string user2, int user2point)
+    public void UpdateScoreText(string user,int userPoint)
     {
-        _user1Score.text = Text(user1, user1point);
-        _user2Score.text = Text(user2, user2point);
+        _userScore.text = Text(user, userPoint);
     }
 
     private string Text(string name,int point)

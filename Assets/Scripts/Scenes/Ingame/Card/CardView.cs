@@ -17,7 +17,6 @@ namespace Scenes.Ingame.Card
         [SerializeField] private TextMeshProUGUI _value;
         [SerializeField] private Image _image;
         [SerializeField] private SpritePool _spritePool;
-        [SerializeField] private GameObject _greadEffect;
         private Subject<DivisionData> _pointerOverEvent = new Subject<DivisionData>();
         private Vector2 _nonSelectScale = new Vector2(1f,1f);
         private Vector2 _selectScale = new Vector2(1.1f, 1.1f);
@@ -43,15 +42,11 @@ namespace Scenes.Ingame.Card
             { 
                  _buttonClick.OnNext(_data);
             }).AddTo(this);
-
-            _greadEffect.SetActive(false);
-            CheckGreatEffet(type);
         }
 
         public void UpdateValue(DivisionProfileType type)
         {
             Value(type);
-            CheckGreatEffet(type);
         }
 
         private void Value(DivisionProfileType type)
@@ -85,41 +80,6 @@ namespace Scenes.Ingame.Card
                 default:
                     break;
             }
-        }
-
-        private void CheckGreatEffet(DivisionProfileType type)
-        {
-            bool isActive = false;
-            switch (type)
-            {
-                case DivisionProfileType.surfice:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.surfaceSize).OrderByDescending(x => x).ToList().IndexOf(_data.surfaceSize) < 3;
-                    break;
-                case DivisionProfileType.population:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.population).OrderByDescending(x => x).ToList().IndexOf(_data.population) < 3;
-                    break;
-                case DivisionProfileType.temperature:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.temperature).OrderByDescending(x => x).ToList().IndexOf(_data.temperature) < 3;
-                    break;
-                case DivisionProfileType.urban:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.urban).OrderByDescending(x => x).ToList().IndexOf(_data.urban) < 3;
-                    break;
-                case DivisionProfileType.village:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.village).OrderByDescending(x => x).ToList().IndexOf(_data.village) < 3;
-                    break;
-                case DivisionProfileType.forestSize:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.forestSize).OrderByDescending(x => x).ToList().IndexOf(_data.forestSize) < 3;
-                    break;
-                case DivisionProfileType.Hospitals:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.Hospitals).OrderByDescending(x => x).ToList().IndexOf(_data.Hospitals) < 3;
-                    break;
-                case DivisionProfileType.College:
-                    isActive = MasterDataReader.Instance.Master.DivisionData.Select(v => (float)v.College).OrderByDescending(x => x).ToList().IndexOf(_data.College) < 3;
-                    break;
-                default:
-                    break;
-            }
-            _greadEffect.SetActive(isActive);
         }
 
         public void SetScale(bool value)

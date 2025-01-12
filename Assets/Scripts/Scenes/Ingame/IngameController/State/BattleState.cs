@@ -24,6 +24,6 @@ public class BattleState<T> : StateBase<T>
         await UniTask.Delay(System.TimeSpan.FromSeconds(1.5f));
         view.HideBattleResultPanel();
         view.HidePreviewCard();
-        view.UpdateScore("Player", battleArg.playerScore);
+        view.UpdateScore(battleArg.playerScore);
     }
 }

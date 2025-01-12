@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 public class GameEndView : MonoBehaviour
 {
     [SerializeField] private GameObject _panel;
-    [SerializeField] private TextMeshProUGUI _winnerText;
     [SerializeField] private TextMeshProUGUI _scoreText;
     [SerializeField] private Button _retryButton;
     public void Init()
@@ -19,8 +18,7 @@ public class GameEndView : MonoBehaviour
     public void Show(string winnerName,int score)
     {
         _panel.SetActive(true);
-        _winnerText.text = $"{winnerName} ?????I";
-        _scoreText.text = $"Score : {score}";
+        _scoreText.text = $"ê≥ìöêî : {score}";
     }
 
     public void Hide()

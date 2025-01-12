@@ -7,16 +7,16 @@ public class ScoreView : MonoBehaviour
 
     public void Init()
     {
-        _userScore.text = Text("Player", 0);
+        _userScore.text = Text(0);
     }
 
-    public void UpdateScoreText(string user,int userPoint)
+    public void UpdateScoreText(int userPoint)
     {
-        _userScore.text = Text(user, userPoint);
+        _userScore.text = Text( userPoint);
     }
 
-    private string Text(string name,int point)
+    private string Text(int point)
     {
-        return $"{name} のスコアは {point} 点";
+        return $"正解数： {point} 問";
     }
 }

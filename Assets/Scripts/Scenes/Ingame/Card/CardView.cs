@@ -15,6 +15,7 @@ namespace Scenes.Ingame.Card
     {
         [SerializeField] private TextMeshProUGUI _name;
         [SerializeField] private TextMeshProUGUI _value;
+        [SerializeField] private GameObject _valuePanel;
         [SerializeField] private Image _image;
         [SerializeField] private SpritePool _spritePool;
         private Subject<DivisionData> _pointerOverEvent = new Subject<DivisionData>();
@@ -42,6 +43,11 @@ namespace Scenes.Ingame.Card
             { 
                  _buttonClick.OnNext(_data);
             }).AddTo(this);
+
+#if UNITY_EDITOR
+#else
+            _valuePanel.SetActive(false);//Unity上だけ値を表示する
+#endif
         }
 
         public void UpdateValue(DivisionProfileType type)

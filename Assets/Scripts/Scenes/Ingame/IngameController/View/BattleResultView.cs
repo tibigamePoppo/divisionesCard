@@ -13,7 +13,7 @@ public class BattleResultView : MonoBehaviour
     public void ShowBattleResultPanel(bool isCollectAnswer)
     {
         gameObject.SetActive(true);
-        _resulttext.text = isCollectAnswer ? "Collect" : "Failed";
+        _resulttext.text = isCollectAnswer ? "ê≥âÅI" : "ïsê≥âÅI";
     }
 
     public void HidePanel()

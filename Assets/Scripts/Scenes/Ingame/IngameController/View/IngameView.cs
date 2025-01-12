@@ -132,9 +132,9 @@ public class IngameView : MonoBehaviour
         }
     }
 
-    public void UpdateScore(string user, int userPoint)
+    public void UpdateScore(int userPoint)
     {
-        _scoreView.UpdateScoreText(user, userPoint);
+        _scoreView.UpdateScoreText( userPoint);
     }
 
     public void SetThemeText(DivisionProfileType text)
@@ -142,28 +142,28 @@ public class IngameView : MonoBehaviour
         switch (text)
         {
             case DivisionProfileType.surfice:
-                _themeText.text = "????(2022)";
+                _themeText.text = "面積 (2022年)";
                 break;
             case DivisionProfileType.population:
-                _themeText.text = "?l??(2022)";
+                _themeText.text = "人口 (2022年)";
                 break;
             case DivisionProfileType.temperature:
-                _themeText.text = "?????C??(2022)";
+                _themeText.text = "平均気温 (2022年)";
                 break;
             case DivisionProfileType.urban:
-                _themeText.text = "?s????(2022)";
+                _themeText.text = "村の数 (2022年)";
                 break;
             case DivisionProfileType.village:
-                _themeText.text = "??????(2022)";
+                _themeText.text = "町の数 (2022年)";
                 break;
             case DivisionProfileType.forestSize:
-                _themeText.text = "?X??????(ha)(2019)";
+                _themeText.text = "森林面積 (ha) (2019年)";
                 break;
             case DivisionProfileType.Hospitals:
-                _themeText.text = "?a?@??(2022)";
+                _themeText.text = "病院数 (2022年)";
                 break;
             case DivisionProfileType.College:
-                _themeText.text = "???w??(2022)";
+                _themeText.text = "大学数 (2022年)";
                 break;
             default:
                 break;

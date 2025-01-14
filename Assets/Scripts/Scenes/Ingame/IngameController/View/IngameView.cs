@@ -17,6 +17,7 @@ public class IngameView : MonoBehaviour
     [SerializeField] private BattleResultView _battleResultView;
     [SerializeField] private GameEndView _gameEndView;
     [SerializeField] private InformationPanelView _informationPanelView;
+    [SerializeField] private ProcessView _processView;
     [SerializeField] private ScoreView _scoreView;
     [SerializeField] private TextMeshProUGUI _themeText;
 
@@ -33,6 +34,7 @@ public class IngameView : MonoBehaviour
         _battleResultView.Init();
         _informationPanelView.Init();
         _scoreView.Init();
+        _processView.Init();
         _readyButton.interactable = false;
         _readyButton.OnClickAsObservable()
             .Where(_ => _selectCardData != null)
@@ -113,6 +115,7 @@ public class IngameView : MonoBehaviour
     public void ShowBattleResultPanel(bool isCollectAnswer)
     {
         _battleResultView.ShowBattleResultPanel(isCollectAnswer);
+        _processView.SetRessult(isCollectAnswer);
     }
 
     public void HideBattleResultPanel()

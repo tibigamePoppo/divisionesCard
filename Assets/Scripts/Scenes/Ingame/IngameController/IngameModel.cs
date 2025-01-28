@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using Cysharp.Threading.Tasks;
-using TMPro.Examples;
 using UniRx;
 public class IngameModel
 {
-    private const int PLAYERHANDCOUNT = 5;//?v???C???[?????D??????
+    private const int PLAYERHANDCOUNT = 5;
 
     private Subject<Unit> _stageReady = new Subject<Unit>();
     private ReactiveProperty<DivisionProfileType> _updateTheme = new ReactiveProperty<DivisionProfileType>();
@@ -47,8 +45,6 @@ public class IngameModel
 
         State.Where(state => state == StateType.Battle)
             .Subscribe(_ => Battle().Forget());
-
-        //UpdateThemeValue();
     }
 
     private void CreateDeck()
@@ -61,9 +57,7 @@ public class IngameModel
     {
         for (int i = 0; i < PLAYERHANDCOUNT; i++)
         {
-            var card = _deck[UnityEngine.Random.Range(0, _deck.Count)];
-            _playerHnad.Add(card);
-            _deck.Remove(card);
+            PlayerHandSet();
         }
         _state.Value = StateType.Draw;
     }
@@ -72,9 +66,7 @@ public class IngameModel
     {
         if(_playerHnad.Count < PLAYERHANDCOUNT)
         {
-            var card = _deck[UnityEngine.Random.Range(0, _deck.Count)];
-            _playerHnad.Add(card);
-            _deck.Remove(card);
+            PlayerHandSet();
         }
         _state.Value = StateType.CardSelect;
     }
@@ -83,10 +75,11 @@ public class IngameModel
     /// ?v???C???[?????D??????
     /// </summary>
     /// <param name="type"></param>
-    public void PlayerHandSet(DivisionData type)
+    public void PlayerHandSet()
     {
-        _playerHnad.Add(type);
-        _deck.Remove(type);
+        var card = _deck[UnityEngine.Random.Range(0, _deck.Count)];
+        _playerHnad.Add(card);
+        _deck.Remove(card);
     }
 
     public void SetPlayerSelectCard(DivisionData data)
